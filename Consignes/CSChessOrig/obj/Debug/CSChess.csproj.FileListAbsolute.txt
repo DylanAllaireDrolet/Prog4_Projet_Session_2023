@@ -1,0 +1,18 @@
+P:\backup aut 2018\P56 (Conception OO)\Travaux pratiques\TP1\CSChessOrig\bin\Debug\CSChess.exe
+P:\backup aut 2018\P56 (Conception OO)\Travaux pratiques\TP1\CSChessOrig\bin\Debug\CSChess.pdb
+P:\backup aut 2018\P56 (Conception OO)\Travaux pratiques\TP1\CSChessOrig\obj\Debug\CSChess.csprojAssemblyReference.cache
+P:\backup aut 2018\P56 (Conception OO)\Travaux pratiques\TP1\CSChessOrig\obj\Debug\CSChess.frmMain.resources
+P:\backup aut 2018\P56 (Conception OO)\Travaux pratiques\TP1\CSChessOrig\obj\Debug\CSChess.Properties.Resources.resources
+P:\backup aut 2018\P56 (Conception OO)\Travaux pratiques\TP1\CSChessOrig\obj\Debug\CSChess.csproj.GenerateResource.cache
+P:\backup aut 2018\P56 (Conception OO)\Travaux pratiques\TP1\CSChessOrig\obj\Debug\CSChess.csproj.CoreCompileInputs.cache
+P:\backup aut 2018\P56 (Conception OO)\Travaux pratiques\TP1\CSChessOrig\obj\Debug\CSChess.exe
+P:\backup aut 2018\P56 (Conception OO)\Travaux pratiques\TP1\CSChessOrig\obj\Debug\CSChess.pdb
+R:\Partage\Informatique\Charles Jacob\C46\Travaux pratiques\CSChessOrig\bin\Debug\CSChess.exe
+R:\Partage\Informatique\Charles Jacob\C46\Travaux pratiques\CSChessOrig\bin\Debug\CSChess.pdb
+R:\Partage\Informatique\Charles Jacob\C46\Travaux pratiques\CSChessOrig\obj\Debug\CSChess.csproj.AssemblyReference.cache
+R:\Partage\Informatique\Charles Jacob\C46\Travaux pratiques\CSChessOrig\obj\Debug\CSChess.frmMain.resources
+R:\Partage\Informatique\Charles Jacob\C46\Travaux pratiques\CSChessOrig\obj\Debug\CSChess.Properties.Resources.resources
+R:\Partage\Informatique\Charles Jacob\C46\Travaux pratiques\CSChessOrig\obj\Debug\CSChess.csproj.GenerateResource.cache
+R:\Partage\Informatique\Charles Jacob\C46\Travaux pratiques\CSChessOrig\obj\Debug\CSChess.csproj.CoreCompileInputs.cache
+R:\Partage\Informatique\Charles Jacob\C46\Travaux pratiques\CSChessOrig\obj\Debug\CSChess.exe
+R:\Partage\Informatique\Charles Jacob\C46\Travaux pratiques\CSChessOrig\obj\Debug\CSChess.pdb

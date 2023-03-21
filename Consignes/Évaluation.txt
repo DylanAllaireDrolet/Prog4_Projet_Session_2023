@@ -1,0 +1,16 @@
+Demo : 30%
+Diagrammes de classe : 20%
+Diagrammes de sequences : 10%
+Qualité du code et commentaires : 10%
+Rapport final : 10%
+
+
+
+RAPPORT FINAL :
+
+- Page présentation
+- Table de matière
+- Dictionnaire de classe
+- Explication des décisions de conception
+- Problème rencontrés
+- Principales différences entre la conception et le résultat final.

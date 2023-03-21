@@ -1,0 +1,8 @@
+bin\Debug\CSChess.exe
+bin\Debug\CSChess.pdb
+obj\Debug\ResolveAssemblyReference.cache
+obj\Debug\CSChess.frmMain.resources
+obj\Debug\CSChess.Properties.Resources.resources
+obj\Debug\CSChess.csproj.GenerateResource.Cache
+obj\Debug\CSChess.exe
+obj\Debug\CSChess.pdb
