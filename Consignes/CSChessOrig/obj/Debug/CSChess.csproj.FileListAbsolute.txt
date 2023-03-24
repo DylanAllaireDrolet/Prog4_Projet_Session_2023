@@ -16,3 +16,5 @@ R:\Partage\Informatique\Charles Jacob\C46\Travaux pratiques\CSChessOrig\obj\Debu
 R:\Partage\Informatique\Charles Jacob\C46\Travaux pratiques\CSChessOrig\obj\Debug\CSChess.csproj.CoreCompileInputs.cache
 R:\Partage\Informatique\Charles Jacob\C46\Travaux pratiques\CSChessOrig\obj\Debug\CSChess.exe
 R:\Partage\Informatique\Charles Jacob\C46\Travaux pratiques\CSChessOrig\obj\Debug\CSChess.pdb
+C:\Users\Dylan\Documents\GitHub\Prog4_Projet_Session_2023\Consignes\CSChessOrig\obj\Debug\CSChess.exe
+C:\Users\Dylan\Documents\GitHub\Prog4_Projet_Session_2023\Consignes\CSChessOrig\obj\Debug\CSChess.pdb
