@@ -1,0 +1,5 @@
+C:\Users\Dylan\Documents\GitHub\Prog4_Projet_Session_2023\Consignes\CodeProf\CodeProf\obj\Debug\CodeProf.csproj.AssemblyReference.cache
+C:\Users\Dylan\Documents\GitHub\Prog4_Projet_Session_2023\Consignes\CodeProf\CodeProf\obj\Debug\CodeProf.csproj.SuggestedBindingRedirects.cache
+C:\Users\Dylan\Documents\GitHub\Prog4_Projet_Session_2023\Consignes\CodeProf\CodeProf\obj\Debug\CodeProf.Properties.Resources.resources
+C:\Users\Dylan\Documents\GitHub\Prog4_Projet_Session_2023\Consignes\CodeProf\CodeProf\obj\Debug\CodeProf.csproj.GenerateResource.cache
+C:\Users\Dylan\Documents\GitHub\Prog4_Projet_Session_2023\Consignes\CodeProf\CodeProf\obj\Debug\CodeProf.csproj.CoreCompileInputs.cache

@@ -53,7 +53,7 @@
             this.StripMenuControl});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(868, 52);
+            this.menuStrip1.Size = new System.Drawing.Size(868, 60);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -63,19 +63,19 @@
             this.StripMenuNewGame,
             this.StripMenuPlayers});
             this.StripMenuControl.Name = "StripMenuControl";
-            this.StripMenuControl.Size = new System.Drawing.Size(119, 48);
+            this.StripMenuControl.Size = new System.Drawing.Size(119, 56);
             this.StripMenuControl.Text = "Menu";
             // 
             // StripMenuNewGame
             // 
             this.StripMenuNewGame.Name = "StripMenuNewGame";
-            this.StripMenuNewGame.Size = new System.Drawing.Size(448, 54);
+            this.StripMenuNewGame.Size = new System.Drawing.Size(327, 54);
             this.StripMenuNewGame.Text = "New game";
             // 
             // StripMenuPlayers
             // 
             this.StripMenuPlayers.Name = "StripMenuPlayers";
-            this.StripMenuPlayers.Size = new System.Drawing.Size(448, 54);
+            this.StripMenuPlayers.Size = new System.Drawing.Size(327, 54);
             this.StripMenuPlayers.Text = "Players";
             this.StripMenuPlayers.Click += new System.EventHandler(this.StripMenuPlayers_Click);
             // 
@@ -101,6 +101,7 @@
             this.btnRemove.Text = "Remove";
             this.btnRemove.UseVisualStyleBackColor = true;
             this.btnRemove.Visible = false;
+            this.btnRemove.Click += new System.EventHandler(this.btnRemove_Click);
             // 
             // lblUsername
             // 
@@ -136,19 +137,21 @@
             this.lsbPlayers.Name = "lsbPlayers";
             this.lsbPlayers.Size = new System.Drawing.Size(316, 531);
             this.lsbPlayers.TabIndex = 0;
+            this.lsbPlayers.SelectedIndexChanged += new System.EventHandler(this.lsbPlayers_SelectedIndexChanged);
             // 
             // btnNewGame
             // 
-            this.btnNewGame.Location = new System.Drawing.Point(174, 77);
+            this.btnNewGame.Location = new System.Drawing.Point(190, 77);
             this.btnNewGame.Name = "btnNewGame";
             this.btnNewGame.Size = new System.Drawing.Size(512, 110);
             this.btnNewGame.TabIndex = 2;
             this.btnNewGame.Text = "New Game";
             this.btnNewGame.UseVisualStyleBackColor = true;
+            this.btnNewGame.Click += new System.EventHandler(this.btnNewGame_Click);
             // 
             // btnPlayers
             // 
-            this.btnPlayers.Location = new System.Drawing.Point(178, 220);
+            this.btnPlayers.Location = new System.Drawing.Point(190, 221);
             this.btnPlayers.Name = "btnPlayers";
             this.btnPlayers.Size = new System.Drawing.Size(512, 110);
             this.btnPlayers.TabIndex = 3;

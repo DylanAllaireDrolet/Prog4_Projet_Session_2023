@@ -14,14 +14,16 @@ namespace TP1
         [STAThread]
         static void Main()
         {
+            Application.EnableVisualStyles();
+            Application.SetCompatibleTextRenderingDefault(false);
             Chess echec = new Chess();
-           /* Application.EnableVisualStyles();
-            Application.SetCompatibleTextRenderingDefault(false);*/
         }
 
         // Members
         private FormMenu _menu; // <- App menu
         private List<Game> _games; // <- List of all the games
+        public const int WHITE = 1;
+        public const int BLACK = 2;
 
         // Properties
         public FormMenu Menu
@@ -37,13 +39,18 @@ namespace TP1
         // Constructor
         public Chess()
         {
-            FormMenu _menu = new FormMenu();
+            _games = new List<Game>();
+            FormMenu _menu = new FormMenu(this);
             Application.Run(_menu);
         }
 
         public void newGame(Player white, Player Black)
         {
             _games.Add(new Game(white, Black));
+        }
+        public void newGame()
+        {
+            _games.Add(new Game());
         }
     }
 }

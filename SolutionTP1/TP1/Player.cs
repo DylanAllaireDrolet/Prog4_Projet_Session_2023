@@ -28,6 +28,17 @@ namespace TP1
             p.GamesLost = p.GamesLost + 1;
             return p;
         }
+        public static bool operator == (Player p1, Player p2)
+        {
+            if (p1.Name == p2.Name && p1.Wins == p2.Wins && p1.GamesLost == p2.GamesLost && p1.GameDraw == p2.GameDraw)
+                return true;
+            else
+                return false;
+        }
+        public static bool operator != (Player p1, Player p2)
+        {
+            return !(p1 == p2);
+        }
 
         public int Wins
         {
@@ -82,6 +93,16 @@ namespace TP1
             _gameWon = wins;
             _gameLost = lost;
             _gameNull = nullGame;
+        }
+
+        // Methods
+        public override bool Equals(object obj)
+        {
+            return (Player)obj == this ? true : false;
+        }
+        public override string ToString()
+        {
+            return _name + ' ' + _gameWon + ' ' + _gameLost + ' ' + _gameNull;
         }
     }
 }

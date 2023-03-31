@@ -15,22 +15,28 @@ namespace TP1
     {
         // Members
         private List<Player> _players;
+        private Chess _chess;
 
         // Properties
         public Player this[int i]
         {
             get { return _players[i]; }
         }
-
-        // Constructor
-        public FormMenu()
+        public Chess chess
         {
+            get { return _chess; }
+            set { _chess = value; }
+        }
+        // Constructor
+        public FormMenu(Chess chess)
+        {
+            _chess = chess;
             _players= new List<Player>();
             InitializeComponent();
             initFile();
         }
 
-        // Functions
+        // Methods
         public void initFile()
         {
             if (File.Exists("./players.txt"))
@@ -43,7 +49,7 @@ namespace TP1
                 {
                     lsbPlayers.Items.Insert(0, line);
                     player = line.Split(' ');
-                    _players.Add(new Player(player[0]));
+                    _players.Add(new Player(player[0], int.Parse(player[1]), int.Parse(player[2]), int.Parse(player[3])));
                 }
                 sr.Close();
             }
@@ -53,6 +59,15 @@ namespace TP1
             }
         }
 
+        private void updateFile()
+        {
+            StreamWriter sw = new StreamWriter("./players.txt");
+            foreach (Player p in _players)
+            {
+                sw.WriteLine(p.ToString());
+            }
+            sw.Close();
+        }
         private void btnAddPlayer_Click(object sender, EventArgs e)
         {
             if (tbName.Text.Length > 0)
@@ -79,6 +94,34 @@ namespace TP1
         private void StripMenuPlayers_Click(object sender, EventArgs e)
         {
             btnPlayers_Click(sender, e);
+        }
+
+        private void lsbPlayers_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            btnRemove.Visible = true;
+        }
+
+        private void btnRemove_Click(object sender, EventArgs e)
+        {
+            string[] player = lsbPlayers.Text.Split(' ');
+
+            DialogResult result = MessageBox.Show("You're about to delete a user. Are you sure you want to proceed?", "Confirmation", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+
+            if (result == DialogResult.Yes)
+            {
+                Player toRmv = new Player(player[0], int.Parse(player[1]), int.Parse(player[2]), int.Parse(player[3]));
+                _players.Remove(toRmv);
+                updateFile();
+                lsbPlayers.Items.Remove(lsbPlayers.SelectedItem);
+            }
+
+            lsbPlayers.ClearSelected();
+            btnRemove.Visible = false;
+        }
+
+        private void btnNewGame_Click(object sender, EventArgs e)
+        {
+            _chess.newGame();
         }
     }
 }
