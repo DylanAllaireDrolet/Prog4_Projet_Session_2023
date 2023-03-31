@@ -10,7 +10,7 @@ namespace TP1
     public class Pawn : MovedPiece
     {
         // Members
-
+        private bool enPassant;
         // Properties
         public override Bitmap IMG
         {
@@ -22,10 +22,15 @@ namespace TP1
                     return null;
             }
         }
+        public bool EnPassant
+        {
+            get { return enPassant; }
+            set { enPassant = value; }
+        }
         // Constructors
         public Pawn() : base(1)
         {
-
+            enPassant = false;
         }
         public Pawn(Square square, int color) : base(square, color, 1)
         {

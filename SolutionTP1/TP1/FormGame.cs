@@ -21,6 +21,8 @@ namespace TP1
             _game = game;
             this.SourceX = this.SourceY = -1;
             InitializeComponent();
+            lbl_pb.Text = _game.BlackPlayer.Name;
+            lbl_pw.Text = _game.WhitePlayer.Name;
         }
 
         private void pnlBoard_Paint(object sender, PaintEventArgs e)
@@ -71,7 +73,7 @@ namespace TP1
                 myGraph.DrawRectangle(new Pen(Color.Chocolate, 2), this.SourceX * 30, this.SourceY * 30, 30, 30);
                 if (!_game.Play(SourceX, SourceY, e.X / 30, e.Y / 30))
                 {
-                    MessageBox.Show("Illegal move! Please try again!", "Error", MessageBoxButtons.OK);
+
                 }
                 pnlBoard.Refresh();
                 this.SourceX = this.SourceY = -1; 

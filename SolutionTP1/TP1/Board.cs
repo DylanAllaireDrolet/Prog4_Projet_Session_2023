@@ -12,6 +12,7 @@ namespace TP1
         private Square[,] _squares;
         public const int WHITE = 1;
         public const int BLACK = 2;
+        public const int SIZE = 8;
 
         // Properties
         public Square this[int i, int j]

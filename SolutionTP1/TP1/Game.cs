@@ -66,13 +66,34 @@ namespace TP1
         // Methods
         public bool Play(int sourceX, int sourceY, int targetX, int targetY)
         {
-            if (isLegalMove(sourceX, sourceY, targetX, targetY) && !isChecked())
+            if (isLegalMove(sourceX, sourceY, targetX, targetY))
             {
+                Board remember = new Board();
+                for (int i = 0; i < Board.SIZE; i++)
+                    for (int j = 0; j < Board.SIZE; j++)
+                    {
+                        remember[i, j].Me = _board[i, j].Me;
+                    }
+
                 _board[targetY, targetX].Me = _board[sourceY, sourceX].Me;
                 _board[sourceY, sourceX].Me = null;
-                _turn = _turn == Chess.WHITE ? Chess.BLACK : Chess.WHITE;
-                return true;
+                if (isChecked())
+                {
+                    MessageBox.Show("You are in check! Please make another move", "Error", MessageBoxButtons.OK);
+                    _board = remember;
+                    return false;
+                }
+                else
+                {
+                    _turn = _turn == Chess.WHITE ? Chess.BLACK : Chess.WHITE;
+                    return true;
+                }
             }
+            else
+            {
+                MessageBox.Show("Illegal move! Please make another move!", "Error", MessageBoxButtons.OK);
+            }
+            
             return false;
         }
 
@@ -177,6 +198,7 @@ namespace TP1
                 // Pawn movement
                 if (_board[sourceY, sourceX].Me is Pawn)
                 {
+                    // Eating a piece
                     if (sourceX != targetX)
                     {
                         if (Math.Abs(sourceY - targetY) == 1 && Math.Abs(sourceX - targetX) == 1)
@@ -229,6 +251,7 @@ namespace TP1
                                 {
                                     if (checking)
                                         _turn = _turn == Chess.WHITE ? Chess.BLACK : Chess.WHITE;
+                                    return true;
                                 }
                             }
                         }
