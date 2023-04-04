@@ -10,12 +10,19 @@ using System.Windows.Forms;
 
 namespace TP1
 {
+    /// <summary>
+    /// FormGame Class
+    /// </summary>
     public partial class FormGame : Form
     {
         // Members
-        private Game _game;
-        private int SourceX, SourceY;
+        private Game _game; // Curent game
+        private int SourceX, SourceY; // Source of click
 
+        /// <summary>
+        /// Constructor
+        /// </summary>
+        /// <param name="game">Current game</param>
         public FormGame(Game game)
         {
             _game = game;
@@ -23,8 +30,14 @@ namespace TP1
             InitializeComponent();
             lbl_pb.Text = _game.BlackPlayer.Name;
             lbl_pw.Text = _game.WhitePlayer.Name;
+            WhiteTurn();
         }
 
+        /// <summary>
+        /// Paints the board
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void pnlBoard_Paint(object sender, PaintEventArgs e)
         {
             Graphics myGraph = pnlBoard.CreateGraphics();
@@ -51,6 +64,92 @@ namespace TP1
                 }
         }
 
+        /// <summary>
+        /// Ends the game
+        /// </summary>
+        public void End()
+        {
+            Close();
+        }
+
+        /// <summary>
+        /// Changes turn to White in the view
+        /// </summary>
+        public void WhiteTurn()
+        {
+            lbl_pb.ForeColor = Color.Red;
+            lbl_pw.ForeColor = Color.Green;
+
+            btnResign_pw.Enabled = true;
+            btnNull_pw.Enabled = true;
+
+            btnNull_pb.Enabled = false;
+            btnResign_pb.Enabled = false;
+        }
+
+        /// <summary>
+        /// Changes turn to Black in the view
+        /// </summary>
+        public void BlackTurn()
+        {
+            lbl_pb.ForeColor = Color.Green;
+            lbl_pw.ForeColor = Color.Red;
+
+            btnResign_pw.Enabled = false;
+            btnNull_pw.Enabled = false;
+
+            btnNull_pb.Enabled = true;
+            btnResign_pb.Enabled = true;
+        }
+
+        /// <summary>
+        /// White player ask's a draw
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void btnNull_pw_Click(object sender, EventArgs e)
+        {
+
+        }
+        /// <summary>
+        /// Black player ask's for draw
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void btnNull_pb_Click(object sender, EventArgs e)
+        {
+            DialogResult result = MessageBox.Show(_game.WhitePlayer.Name + " do you accept the draw ?", "Draw ?", MessageBoxButtons.YesNo);
+            if (result == DialogResult.Yes)
+            {
+                _game.GameEnd(_game.BlackPlayer, _game.WhitePlayer, true);
+            }
+        }
+        
+        /// <summary>
+        /// White player resign's
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void btnResign_pw_Click(object sender, EventArgs e)
+        {
+            _game.GameEnd(_game.BlackPlayer, _game.WhitePlayer);
+        }
+
+        /// <summary>
+        /// Black Player ask's for draw
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void btnResign_pb_Click(object sender, EventArgs e)
+        {
+            _game.GameEnd(_game.WhitePlayer, _game.BlackPlayer);
+        }
+
+        /// <summary>
+        /// Click on board
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void pnlBoard_MouseClick(object sender, MouseEventArgs e)
         {
             Graphics myGraph = pnlBoard.CreateGraphics();
@@ -76,7 +175,11 @@ namespace TP1
 
                 }
                 pnlBoard.Refresh();
-                this.SourceX = this.SourceY = -1; 
+                this.SourceX = this.SourceY = -1;
+                if (_game.Turn == Chess.WHITE)
+                    WhiteTurn();
+                else
+                    BlackTurn();
             }
         }
     }

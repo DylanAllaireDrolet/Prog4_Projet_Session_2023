@@ -7,6 +7,10 @@ using System.Threading.Tasks;
 
 namespace TP1
 {
+
+    /// <summary>
+    /// Piece Class
+    /// </summary>
     public class Piece
     {
         // Members
@@ -15,6 +19,9 @@ namespace TP1
         private int _value; // Value of the pieces
 
         // Properties
+        /// <summary>
+        /// Piece Image
+        /// </summary>
         public virtual Bitmap IMG
         {
             get
@@ -22,11 +29,19 @@ namespace TP1
                     return null;
             }
         }
+
+        /// <summary>
+        /// Piece square
+        /// </summary>
         public Square MySquare
         {
             get { return _mySquare; }
             set { _mySquare = value; }
         }
+
+        /// <summary>
+        /// Picec Color
+        /// </summary>
         public int Color
         {
             get { return _color; }
@@ -34,18 +49,34 @@ namespace TP1
         }
 
         // Constructors
+
+        /// <summary>
+        /// Default constructor
+        /// </summary>
         public Piece()
         {
             _mySquare = null;
             _color = 1;
             _value = 0;
         }
+
+        /// <summary>
+        /// Constructor with value
+        /// </summary>
+        /// <param name="value">Value of piece</param>
         public Piece (int value)
         {
             _value = value;
             _mySquare = null;
             _color = 1;
         }
+
+        /// <summary>
+        /// Constructor of piece
+        /// </summary>
+        /// <param name="square">Current square</param>
+        /// <param name="color">Color of piece</param>
+        /// <param name="value">Value of piece</param>
         public Piece (Square square, int color, int value)
         {
             _mySquare = square;

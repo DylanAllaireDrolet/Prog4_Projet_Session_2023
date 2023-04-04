@@ -7,11 +7,15 @@ using System.Threading.Tasks;
 
 namespace TP1
 {
+
+    /// <summary>
+    /// Knight class, child of Piece
+    /// </summary>
     public class Knight : Piece
     {
-        // Members
-
-        // Properties
+        /// <summary>
+        /// Knight Image
+        /// </summary>
         public override Bitmap IMG
         {
             get
@@ -24,10 +28,19 @@ namespace TP1
         }
 
         // Constructors
+        /// <summary>
+        /// Default constructor
+        /// </summary>
         public Knight() : base(3)
         {
 
         }
+
+        /// <summary>
+        /// Knight constructor
+        /// </summary>
+        /// <param name="square">Current square</param>
+        /// <param name="color">Color of piece</param>
         public Knight(Square square, int color) : base(square, color, 3)
         {
 

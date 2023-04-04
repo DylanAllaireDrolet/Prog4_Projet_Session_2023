@@ -1,0 +1,702 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>TP1</name>
+    </assembly>
+    <members>
+        <member name="T:TP1.Bishop">
+            <summary>
+            Bishop class, child to Piece
+            </summary>
+        </member>
+        <member name="P:TP1.Bishop.IMG">
+            <summary>
+            Bishop Image
+            </summary>
+        </member>
+        <member name="M:TP1.Bishop.#ctor">
+            <summary>
+            Default constructor
+            </summary>
+        </member>
+        <member name="M:TP1.Bishop.#ctor(TP1.Square,System.Int32)">
+            <summary>
+            Constructor for bishop
+            </summary>
+            <param name="square">Current square</param>
+            <param name="color">Current color</param>
+        </member>
+        <member name="T:TP1.EnPassant">
+            <summary>
+            EnPassant class, child of Piece
+            </summary>
+        </member>
+        <member name="M:TP1.EnPassant.#ctor(System.Int32)">
+            <summary>
+            Invisible piece for the En Passant (Child of piece)
+            </summary>
+            <param name="color">Color of the En Passant</param>
+        </member>
+        <member name="T:TP1.FormGame">
+            <summary>
+            FormGame Class
+            </summary>
+        </member>
+        <member name="M:TP1.FormGame.#ctor(TP1.Game)">
+            <summary>
+            Constructor
+            </summary>
+            <param name="game">Current game</param>
+        </member>
+        <member name="M:TP1.FormGame.pnlBoard_Paint(System.Object,System.Windows.Forms.PaintEventArgs)">
+            <summary>
+            Paints the board
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:TP1.FormGame.End">
+            <summary>
+            Ends the game
+            </summary>
+        </member>
+        <member name="M:TP1.FormGame.WhiteTurn">
+            <summary>
+            Changes turn to White in the view
+            </summary>
+        </member>
+        <member name="M:TP1.FormGame.BlackTurn">
+            <summary>
+            Changes turn to Black in the view
+            </summary>
+        </member>
+        <member name="M:TP1.FormGame.btnNull_pw_Click(System.Object,System.EventArgs)">
+            <summary>
+            White player ask's a draw
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:TP1.FormGame.btnNull_pb_Click(System.Object,System.EventArgs)">
+            <summary>
+            Black player ask's for draw
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:TP1.FormGame.btnResign_pw_Click(System.Object,System.EventArgs)">
+            <summary>
+            White player resign's
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:TP1.FormGame.btnResign_pb_Click(System.Object,System.EventArgs)">
+            <summary>
+            Black Player ask's for draw
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:TP1.FormGame.pnlBoard_MouseClick(System.Object,System.Windows.Forms.MouseEventArgs)">
+            <summary>
+            Click on board
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="F:TP1.FormGame.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:TP1.FormGame.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:TP1.FormGame.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:TP1.FormPromotion">
+            <summary>
+            Class for FormPromotion
+            </summary>
+        </member>
+        <member name="P:TP1.FormPromotion.SelectedPiece">
+            <summary>
+            Property for Selected piece
+            </summary>
+        </member>
+        <member name="M:TP1.FormPromotion.#ctor">
+            <summary>
+            Default constructor
+            </summary>
+        </member>
+        <member name="F:TP1.FormPromotion.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:TP1.FormPromotion.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:TP1.FormPromotion.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:TP1.Game">
+            <summary>
+            Game Class
+            </summary>
+        </member>
+        <member name="P:TP1.Game.Board">
+            <summary>
+            Board property
+            </summary>
+        </member>
+        <member name="P:TP1.Game.WhitePlayer">
+            <summary>
+            White player property
+            </summary>
+        </member>
+        <member name="P:TP1.Game.BlackPlayer">
+            <summary>
+            Black player property
+            </summary>
+        </member>
+        <member name="P:TP1.Game.MyForm">
+            <summary>
+            Current form property
+            </summary>
+        </member>
+        <member name="P:TP1.Game.Turn">
+            <summary>
+            Current turn property
+            </summary>
+        </member>
+        <member name="M:TP1.Game.#ctor(TP1.Chess)">
+            <summary>
+            Default constructor
+            </summary>
+            <param name="chess"></param>
+        </member>
+        <member name="M:TP1.Game.#ctor(TP1.Player,TP1.Player,TP1.Chess)">
+            <summary>
+            Game constructor
+            </summary>
+            <param name="white">white player</param>
+            <param name="black">black player</param>
+            <param name="chess">chess controller</param>
+        </member>
+        <member name="M:TP1.Game.GameEnd(TP1.Player,TP1.Player,System.Boolean)">
+            <summary>
+            Ends the game
+            </summary>
+            <param name="winner">Winner of game</param>
+            <param name="loser">Loser of game</param>
+            <param name="draw">If this is true the game is a draw</param>
+        </member>
+        <member name="M:TP1.Game.Play(System.Int32,System.Int32,System.Int32,System.Int32)">
+            <summary>
+            Play a turn
+            </summary>
+            <param name="sourceX">Source square on X</param>
+            <param name="sourceY">Source square on Y</param>
+            <param name="targetX">Target square on X</param>
+            <param name="targetY">Target square on Y</param>
+            <returns>If the turn was valid</returns>
+        </member>
+        <member name="M:TP1.Game.isLegalMove(System.Int32,System.Int32,System.Int32,System.Int32,System.Boolean)">
+            <summary>
+            Check if the play is legal
+            </summary>
+            <param name="sourceX">Source Square on X</param>
+            <param name="sourceY">Source Square on Y</param>
+            <param name="targetX">Target Square on X</param>
+            <param name="targetY">Target Square on Y</param>
+            <param name="checking">If this is true we are not modifying the board for real</param>
+            <returns>True if the move is legal, false if it isn't legal</returns>
+        </member>
+        <member name="M:TP1.Game.isObstructed(System.Int32,System.Int32,System.Int32,System.Int32)">
+            <summary>
+            Check if the path is obstructed
+            </summary>
+            <param name="sourceX">Source square on X</param>
+            <param name="sourceY">Source square on Y</param>
+            <param name="targetX">Target square on X</param>
+            <param name="targetY">Target square on Y</param>
+            <returns>True if the path is obstructed, false if it isn't obstructed</returns>
+        </member>
+        <member name="M:TP1.Game.isChecked">
+            <summary>
+            Check if the king is in check
+            </summary>
+            <returns>True if the king is check, false if it isn't in check</returns>
+        </member>
+        <member name="M:TP1.Game.isCheckMated">
+            <summary>
+            Check if it's checkmate
+            </summary>
+            <returns> True if it's check mate and false if it isn't</returns>
+        </member>
+        <member name="T:TP1.Board">
+            <summary>
+            Board class
+            </summary>
+        </member>
+        <member name="F:TP1.Board.WHITE">
+            <summary>
+            Constant for White = 1
+            </summary>
+        </member>
+        <member name="F:TP1.Board.BLACK">
+            <summary>
+            Constant for Black = 2
+            </summary>
+        </member>
+        <member name="F:TP1.Board.SIZE">
+            <summary>
+            Constant for board Size = 8
+            </summary>
+        </member>
+        <!-- Badly formed XML comment ignored for member "P:TP1.Board.Item(System.Int32,System.Int32)" -->
+        <member name="M:TP1.Board.#ctor">
+            <summary>
+            Default constructor
+            </summary>
+        </member>
+        <member name="T:TP1.King">
+            <summary>
+            King class, child of MovedPiece
+            </summary>
+        </member>
+        <member name="P:TP1.King.IMG">
+            <summary>
+            King Image
+            </summary>
+        </member>
+        <member name="M:TP1.King.#ctor">
+            <summary>
+            Default constructor
+            </summary>
+        </member>
+        <member name="M:TP1.King.#ctor(TP1.Square,System.Int32)">
+            <summary>
+            King constructor
+            </summary>
+            <param name="square">Current square</param>
+            <param name="color">Color of piece</param>
+        </member>
+        <member name="T:TP1.Knight">
+            <summary>
+            Knight class, child of Piece
+            </summary>
+        </member>
+        <member name="P:TP1.Knight.IMG">
+            <summary>
+            Knight Image
+            </summary>
+        </member>
+        <member name="M:TP1.Knight.#ctor">
+            <summary>
+            Default constructor
+            </summary>
+        </member>
+        <member name="M:TP1.Knight.#ctor(TP1.Square,System.Int32)">
+            <summary>
+            Knight constructor
+            </summary>
+            <param name="square">Current square</param>
+            <param name="color">Color of piece</param>
+        </member>
+        <member name="T:TP1.MovedPiece">
+            <summary>
+            MovedPiece Class, child of Piece
+            </summary>
+        </member>
+        <member name="P:TP1.MovedPiece.Moved">
+            <summary>
+            Moved boolean property
+            </summary>
+        </member>
+        <member name="M:TP1.MovedPiece.#ctor">
+            <summary>
+            Default constructor
+            </summary>
+        </member>
+        <member name="M:TP1.MovedPiece.#ctor(System.Int32)">
+            <summary>
+            Constructor for Moved Piece
+            </summary>
+            <param name="value">Value of piece</param>
+        </member>
+        <member name="M:TP1.MovedPiece.#ctor(TP1.Square,System.Int32,System.Int32)">
+            <summary>
+            Constructor for a moved piece
+            </summary>
+            <param name="square">Current square</param>
+            <param name="color">Color of piece</param>
+            <param name="value">Value of piece</param>
+        </member>
+        <member name="T:TP1.Pawn">
+            <summary>
+            Pawn Class, child of moved piece
+            </summary>
+        </member>
+        <member name="P:TP1.Pawn.IMG">
+            <summary>
+            Pawn Image
+            </summary>
+        </member>
+        <member name="M:TP1.Pawn.#ctor">
+            <summary>
+            Default property
+            </summary>
+        </member>
+        <member name="M:TP1.Pawn.#ctor(TP1.Square,System.Int32)">
+            <summary>
+            Pawn Constructor
+            </summary>
+            <param name="square">Current square</param>
+            <param name="color">Color of piece</param>
+        </member>
+        <member name="T:TP1.Piece">
+            <summary>
+            Piece Class
+            </summary>
+        </member>
+        <member name="P:TP1.Piece.IMG">
+            <summary>
+            Piece Image
+            </summary>
+        </member>
+        <member name="P:TP1.Piece.MySquare">
+            <summary>
+            Piece square
+            </summary>
+        </member>
+        <member name="P:TP1.Piece.Color">
+            <summary>
+            Picec Color
+            </summary>
+        </member>
+        <member name="M:TP1.Piece.#ctor">
+            <summary>
+            Default constructor
+            </summary>
+        </member>
+        <member name="M:TP1.Piece.#ctor(System.Int32)">
+            <summary>
+            Constructor with value
+            </summary>
+            <param name="value">Value of piece</param>
+        </member>
+        <member name="M:TP1.Piece.#ctor(TP1.Square,System.Int32,System.Int32)">
+            <summary>
+            Constructor of piece
+            </summary>
+            <param name="square">Current square</param>
+            <param name="color">Color of piece</param>
+            <param name="value">Value of piece</param>
+        </member>
+        <member name="T:TP1.Player">
+            <summary>
+            Player Class
+            </summary>
+        </member>
+        <member name="P:TP1.Player.Name">
+            <summary>
+            Name of player
+            </summary>
+        </member>
+        <member name="M:TP1.Player.op_Increment(TP1.Player)">
+            <summary>
+            Overloading ++ operator
+            </summary>
+            <param name="p">Player to ++</param>
+            <returns></returns>
+        </member>
+        <member name="M:TP1.Player.op_Decrement(TP1.Player)">
+            <summary>
+            Overloading -- operator
+            </summary>
+            <param name="p">Player to --</param>
+            <returns></returns>
+        </member>
+        <member name="M:TP1.Player.op_Equality(TP1.Player,TP1.Player)">
+            <summary>
+            Overloading == operator
+            </summary>
+            <param name="p1">First player to compare</param>
+            <param name="p2">Second player to compare</param>
+            <returns></returns>
+        </member>
+        <member name="M:TP1.Player.op_Inequality(TP1.Player,TP1.Player)">
+            <summary>
+            Overload != operator
+            </summary>
+            <param name="p1">First player to compare</param>
+            <param name="p2">Second player to compare</param>
+            <returns></returns>
+        </member>
+        <member name="P:TP1.Player.Wins">
+            <summary>
+            Player wins
+            </summary>
+        </member>
+        <member name="P:TP1.Player.GamesLost">
+            <summary>
+            Games lost
+            </summary>
+        </member>
+        <member name="P:TP1.Player.GameDraw">
+            <summary>
+            Game drew
+            </summary>
+        </member>
+        <member name="M:TP1.Player.#ctor">
+            <summary>
+            Default constructor
+            </summary>
+        </member>
+        <member name="M:TP1.Player.#ctor(System.String)">
+            <summary>
+            Player constructor
+            </summary>
+            <param name="name">name of player</param>
+        </member>
+        <member name="M:TP1.Player.#ctor(System.String,System.Int32,System.Int32,System.Int32)">
+            <summary>
+            Player constructor
+            </summary>
+            <param name="name">name of player</param>
+            <param name="wins">wins of player</param>
+            <param name="lost">lost's of player</param>
+            <param name="nullGame">Games drew</param>
+        </member>
+        <member name="M:TP1.Player.Equals(System.Object)">
+            <summary>
+            Equals method
+            </summary>
+            <param name="obj">Objet to compare</param>
+            <returns></returns>
+        </member>
+        <member name="M:TP1.Player.ToString">
+            <summary>
+            ToString function
+            </summary>
+            <returns>String version of player</returns>
+        </member>
+        <member name="T:TP1.FormMenu">
+            <summary>
+            FormMenu class
+            </summary>
+        </member>
+        <member name="P:TP1.FormMenu.Item(System.Int32)">
+            <summary>
+            Indexer for Players
+            </summary>
+            <param name="i"></param>
+            <returns>Players at i index</returns>
+        </member>
+        <member name="P:TP1.FormMenu.chess">
+            <summary>
+            Chess property
+            </summary>
+        </member>
+        <member name="M:TP1.FormMenu.#ctor(TP1.Chess)">
+            <summary>
+            Default FormMenu constructor
+            </summary>
+            <param name="chess"></param>
+        </member>
+        <member name="M:TP1.FormMenu.Finalize">
+            <summary>
+            Destructor
+            </summary>
+        </member>
+        <member name="M:TP1.FormMenu.initFile">
+            <summary>
+            Initialize file
+            </summary>
+        </member>
+        <member name="M:TP1.FormMenu.updateFile">
+            <summary>
+            Updates the file
+            </summary>
+        </member>
+        <member name="F:TP1.FormMenu.components">
+            <summary>
+            Variable nécessaire au concepteur.
+            </summary>
+        </member>
+        <member name="M:TP1.FormMenu.Dispose(System.Boolean)">
+            <summary>
+            Nettoyage des ressources utilisées.
+            </summary>
+            <param name="disposing">true si les ressources managées doivent être supprimées ; sinon, false.</param>
+        </member>
+        <member name="M:TP1.FormMenu.InitializeComponent">
+            <summary>
+            Méthode requise pour la prise en charge du concepteur - ne modifiez pas
+            le contenu de cette méthode avec l'éditeur de code.
+            </summary>
+        </member>
+        <member name="T:TP1.Chess">
+            <summary>
+            Chess class
+            </summary>
+        </member>
+        <member name="M:TP1.Chess.Main">
+            <summary>
+            Entry point of program
+            </summary>
+        </member>
+        <member name="F:TP1.Chess._menu">
+            <summary>
+            Form menu
+            </summary>
+        </member>
+        <member name="F:TP1.Chess._games">
+            <summary>
+            List of all games
+            </summary>
+        </member>
+        <member name="F:TP1.Chess.WHITE">
+            <summary>
+            Constant for White = 1
+            </summary>
+        </member>
+        <member name="F:TP1.Chess.BLACK">
+            <summary>
+             Const for black = 2
+            </summary>
+        </member>
+        <member name="P:TP1.Chess.Menu">
+            <summary>
+            Menu property
+            </summary>
+        </member>
+        <member name="P:TP1.Chess.Item(System.Int32)">
+            <summary>
+            Indexer
+            </summary>
+            <param name="i">Games at i index</param>
+            <returns>Games at i index</returns>
+        </member>
+        <member name="M:TP1.Chess.#ctor">
+            <summary>
+            Default constructor
+            </summary>
+        </member>
+        <member name="M:TP1.Chess.newGame(TP1.Player,TP1.Player)">
+            <summary>
+            Starts a new game
+            </summary>
+            <param name="white">White Player</param>
+            <param name="Black">Black Player</param>
+        </member>
+        <member name="M:TP1.Chess.newGame">
+            <summary>
+            New game for testing (without players)
+            </summary>
+        </member>
+        <member name="T:TP1.Queen">
+            <summary>
+            Queen class, child of Piece
+            </summary>
+        </member>
+        <member name="P:TP1.Queen.IMG">
+            <summary>
+            Queen Image
+            </summary>
+        </member>
+        <member name="M:TP1.Queen.#ctor">
+            <summary>
+            Default constructor
+            </summary>
+        </member>
+        <member name="M:TP1.Queen.#ctor(TP1.Square,System.Int32)">
+            <summary>
+            Queen constructor
+            </summary>
+            <param name="square">Current square</param>
+            <param name="color">Color of piece</param>
+        </member>
+        <member name="T:TP1.Rook">
+            <summary>
+            Rook class, child of MovedPiece
+            </summary>
+        </member>
+        <member name="P:TP1.Rook.IMG">
+            <summary>
+            Rook Image
+            </summary>
+        </member>
+        <member name="M:TP1.Rook.#ctor">
+            <summary>
+            Default constructor
+            </summary>
+        </member>
+        <member name="M:TP1.Rook.#ctor(TP1.Square,System.Int32)">
+            <summary>
+            Rook constructor
+            </summary>
+            <param name="square">Current square</param>
+            <param name="color">Color of piece</param>
+        </member>
+        <member name="T:TP1.Square">
+            <summary>
+            Square class
+            </summary>
+        </member>
+        <member name="P:TP1.Square.Color">
+            <summary>
+            Color of square
+            </summary>
+        </member>
+        <member name="P:TP1.Square.Me">
+            <summary>
+            Piece on me
+            </summary>
+        </member>
+        <member name="M:TP1.Square.#ctor">
+            <summary>
+            Default square constructor
+            </summary>
+        </member>
+        <member name="M:TP1.Square.#ctor(TP1.Piece,System.Int32)">
+            <summary>
+            Square constructor
+            </summary>
+            <param name="me">Piece on me</param>
+            <param name="color">Color of square</param>
+        </member>
+        <member name="T:TP1.Properties.Resources">
+            <summary>
+              Une classe de ressource fortement typée destinée, entre autres, à la consultation des chaînes localisées.
+            </summary>
+        </member>
+        <member name="P:TP1.Properties.Resources.ResourceManager">
+            <summary>
+              Retourne l'instance ResourceManager mise en cache utilisée par cette classe.
+            </summary>
+        </member>
+        <member name="P:TP1.Properties.Resources.Culture">
+            <summary>
+              Remplace la propriété CurrentUICulture du thread actuel pour toutes
+              les recherches de ressources à l'aide de cette classe de ressource fortement typée.
+            </summary>
+        </member>
+    </members>
+</doc>

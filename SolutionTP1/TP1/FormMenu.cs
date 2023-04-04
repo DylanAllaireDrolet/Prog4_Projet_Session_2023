@@ -11,32 +11,61 @@ using System.IO;
 
 namespace TP1
 {
+    /// <summary>
+    /// FormMenu class
+    /// </summary>
     public partial class FormMenu : Form
     {
         // Members
-        private List<Player> _players;
-        private Chess _chess;
+        private List<Player> _players; // List of all players
+        private Chess _chess; // Chess Controller
 
         // Properties
+        /// <summary>
+        /// Indexer for Players
+        /// </summary>
+        /// <param name="i"></param>
+        /// <returns>Players at i index</returns>
         public Player this[int i]
         {
             get { return _players[i]; }
         }
+
+        /// <summary>
+        /// Chess property
+        /// </summary>
         public Chess chess
         {
             get { return _chess; }
             set { _chess = value; }
         }
         // Constructor
+
+        /// <summary>
+        /// Default FormMenu constructor
+        /// </summary>
+        /// <param name="chess"></param>
         public FormMenu(Chess chess)
         {
             _chess = chess;
-            _players= new List<Player>();
+            _players = new List<Player>();
             InitializeComponent();
             initFile();
         }
 
+        /// <summary>
+        /// Destructor
+        /// </summary>
+        ~FormMenu()
+        {
+            updateFile();
+        }
+
         // Methods
+
+        /// <summary>
+        /// Initialize file
+        /// </summary>
         public void initFile()
         {
             if (File.Exists("./players.txt"))
@@ -59,7 +88,10 @@ namespace TP1
             }
         }
 
-        private void updateFile()
+        /// <summary>
+        /// Updates the file
+        /// </summary>
+        public void updateFile()
         {
             StreamWriter sw = new StreamWriter("./players.txt");
             foreach (Player p in _players)
@@ -68,6 +100,7 @@ namespace TP1
             }
             sw.Close();
         }
+
         private void btnAddPlayer_Click(object sender, EventArgs e)
         {
             if (tbName.Text.Length > 0)
@@ -121,7 +154,27 @@ namespace TP1
 
         private void btnNewGame_Click(object sender, EventArgs e)
         {
-            _chess.newGame();
+            pnlPlayers.Visible = true;
+            if (lsbPlayers.SelectedItems.Count == 2)
+            {
+                string[] player1 = lsbPlayers.SelectedItems[0].ToString().Split(' ');
+                string[] player2 = lsbPlayers.SelectedItems[1].ToString().Split(' ');
+
+                Player white = new Player(player1[0], int.Parse(player1[1]), int.Parse(player1[2]), int.Parse(player1[3]));
+                Player black = new Player(player2[0], int.Parse(player2[1]), int.Parse(player2[2]), int.Parse(player2[3]));
+                int pw = _players.FindIndex(x => x == white);
+                int pb = _players.FindIndex(x => x == black);
+
+                _chess.newGame(_players[pw], _players[pb]);
+            }
+            else
+                MessageBox.Show("Please choose 2 players (CTRL + CLICK TO CHOOSE 2)", "Instructions");
+
+        }
+
+        private void StripMenuNewGame_Click(object sender, EventArgs e)
+        {
+            btnNewGame_Click(sender, e);
         }
     }
 }

@@ -53,7 +53,7 @@
             this.StripMenuControl});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(868, 60);
+            this.menuStrip1.Size = new System.Drawing.Size(868, 52);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -63,19 +63,20 @@
             this.StripMenuNewGame,
             this.StripMenuPlayers});
             this.StripMenuControl.Name = "StripMenuControl";
-            this.StripMenuControl.Size = new System.Drawing.Size(119, 56);
+            this.StripMenuControl.Size = new System.Drawing.Size(119, 48);
             this.StripMenuControl.Text = "Menu";
             // 
             // StripMenuNewGame
             // 
             this.StripMenuNewGame.Name = "StripMenuNewGame";
-            this.StripMenuNewGame.Size = new System.Drawing.Size(327, 54);
+            this.StripMenuNewGame.Size = new System.Drawing.Size(448, 54);
             this.StripMenuNewGame.Text = "New game";
+            this.StripMenuNewGame.Click += new System.EventHandler(this.StripMenuNewGame_Click);
             // 
             // StripMenuPlayers
             // 
             this.StripMenuPlayers.Name = "StripMenuPlayers";
-            this.StripMenuPlayers.Size = new System.Drawing.Size(327, 54);
+            this.StripMenuPlayers.Size = new System.Drawing.Size(448, 54);
             this.StripMenuPlayers.Text = "Players";
             this.StripMenuPlayers.Click += new System.EventHandler(this.StripMenuPlayers_Click);
             // 
@@ -135,6 +136,7 @@
             this.lsbPlayers.ItemHeight = 31;
             this.lsbPlayers.Location = new System.Drawing.Point(524, 3);
             this.lsbPlayers.Name = "lsbPlayers";
+            this.lsbPlayers.SelectionMode = System.Windows.Forms.SelectionMode.MultiSimple;
             this.lsbPlayers.Size = new System.Drawing.Size(316, 531);
             this.lsbPlayers.TabIndex = 0;
             this.lsbPlayers.SelectedIndexChanged += new System.EventHandler(this.lsbPlayers_SelectedIndexChanged);

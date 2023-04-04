@@ -7,11 +7,18 @@ using System.Threading.Tasks;
 
 namespace TP1
 {
+    /// <summary>
+    /// Bishop class, child to Piece
+    /// </summary>
     public class Bishop : Piece
     {
         // Members
 
         // Properties
+        
+        /// <summary>
+        /// Bishop Image
+        /// </summary>
         public override Bitmap IMG
         {
             get
@@ -25,10 +32,18 @@ namespace TP1
 
 
         // Constructors
+        /// <summary>
+        /// Default constructor
+        /// </summary>
         public Bishop() : base(3)
         {
 
         }
+        /// <summary>
+        /// Constructor for bishop
+        /// </summary>
+        /// <param name="square">Current square</param>
+        /// <param name="color">Current color</param>
         public Bishop(Square square, int color) : base(square, color, 3)
         {
 

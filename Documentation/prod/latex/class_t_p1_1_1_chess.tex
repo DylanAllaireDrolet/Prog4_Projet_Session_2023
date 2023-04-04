@@ -1,0 +1,99 @@
+\hypertarget{class_t_p1_1_1_chess}{}\doxysection{TP1.\+Chess Class Reference}
+\label{class_t_p1_1_1_chess}\index{TP1.Chess@{TP1.Chess}}
+
+
+Chess class.  
+
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_t_p1_1_1_chess_acf0bbe0fa50e57af053af16ec2f40a55}\label{class_t_p1_1_1_chess_acf0bbe0fa50e57af053af16ec2f40a55}} 
+{\bfseries Chess} ()
+\begin{DoxyCompactList}\small\item\em Default constructor. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_t_p1_1_1_chess_ab79665120f3da4f2d0ce39bc5ca2ce64}{new\+Game}} (\mbox{\hyperlink{class_t_p1_1_1_player}{Player}} white, \mbox{\hyperlink{class_t_p1_1_1_player}{Player}} Black)
+\begin{DoxyCompactList}\small\item\em Starts a new game. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_t_p1_1_1_chess_acc00ae577b9364faff2579cb5a06f6f4}\label{class_t_p1_1_1_chess_acc00ae577b9364faff2579cb5a06f6f4}} 
+void {\bfseries new\+Game} ()
+\begin{DoxyCompactList}\small\item\em New game for testing (without players) \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_t_p1_1_1_chess_a921f82d47913e3e719a40f78b2c72a50}\label{class_t_p1_1_1_chess_a921f82d47913e3e719a40f78b2c72a50}} 
+const int {\bfseries WHITE} = 1
+\begin{DoxyCompactList}\small\item\em Constant for White = 1. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_t_p1_1_1_chess_a67f420073d73eaa6845aca9fc9a88488}\label{class_t_p1_1_1_chess_a67f420073d73eaa6845aca9fc9a88488}} 
+const int {\bfseries BLACK} = 2
+\begin{DoxyCompactList}\small\item\em Const for black = 2. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_t_p1_1_1_chess_a652bcf953c4252f3ca970f9a39e4f9bb}\label{class_t_p1_1_1_chess_a652bcf953c4252f3ca970f9a39e4f9bb}} 
+\mbox{\hyperlink{class_t_p1_1_1_form_menu}{Form\+Menu}} {\bfseries Menu}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Menu property. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_t_p1_1_1_game}{Game}} \mbox{\hyperlink{class_t_p1_1_1_chess_ad7928d92b6bce7d67eabce3a24cdd42b}{this\mbox{[}int i\mbox{]}}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Indexer. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_t_p1_1_1_chess_a1f03c78ab65db535206de82e3924c0cc}\label{class_t_p1_1_1_chess_a1f03c78ab65db535206de82e3924c0cc}} 
+static void {\bfseries Main} ()
+\begin{DoxyCompactList}\small\item\em Entry point of program. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_t_p1_1_1_chess_a341d28e357b56216aba679fa20eee7f7}\label{class_t_p1_1_1_chess_a341d28e357b56216aba679fa20eee7f7}} 
+\mbox{\hyperlink{class_t_p1_1_1_form_menu}{Form\+Menu}} {\bfseries \+\_\+menu}
+\begin{DoxyCompactList}\small\item\em Form menu. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_t_p1_1_1_chess_a5547260494afe34ea704719be4617897}\label{class_t_p1_1_1_chess_a5547260494afe34ea704719be4617897}} 
+List$<$ \mbox{\hyperlink{class_t_p1_1_1_game}{Game}} $>$ {\bfseries \+\_\+games}
+\begin{DoxyCompactList}\small\item\em List of all games. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Chess class. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_t_p1_1_1_chess_ab79665120f3da4f2d0ce39bc5ca2ce64}\label{class_t_p1_1_1_chess_ab79665120f3da4f2d0ce39bc5ca2ce64}} 
+\index{TP1.Chess@{TP1.Chess}!newGame@{newGame}}
+\index{newGame@{newGame}!TP1.Chess@{TP1.Chess}}
+\doxysubsubsection{\texorpdfstring{newGame()}{newGame()}}
+{\footnotesize\ttfamily void TP1.\+Chess.\+new\+Game (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_t_p1_1_1_player}{Player}}}]{white,  }\item[{\mbox{\hyperlink{class_t_p1_1_1_player}{Player}}}]{Black }\end{DoxyParamCaption})}
+
+
+
+Starts a new game. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em white} & White Player\\
+\hline
+{\em Black} & Black Player\\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Property Documentation}
+\mbox{\Hypertarget{class_t_p1_1_1_chess_ad7928d92b6bce7d67eabce3a24cdd42b}\label{class_t_p1_1_1_chess_ad7928d92b6bce7d67eabce3a24cdd42b}} 
+\index{TP1.Chess@{TP1.Chess}!this\mbox{[}int i\mbox{]}@{this[int i]}}
+\index{this\mbox{[}int i\mbox{]}@{this[int i]}!TP1.Chess@{TP1.Chess}}
+\doxysubsubsection{\texorpdfstring{this[int i]}{this[int i]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_t_p1_1_1_game}{Game}} TP1.\+Chess.\+this\mbox{[}int i\mbox{]}\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Indexer. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em i} & Games at i index\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Games at i index
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Dylan/\+Documents/\+Git\+Hub/\+Prog4\+\_\+\+Projet\+\_\+\+Session\+\_\+2023/\+Solution\+TP1/\+TP1/Chess.\+cs\end{DoxyCompactItemize}

@@ -1,0 +1,233 @@
+\hypertarget{class_t_p1_1_1_form_game}{}\doxysection{TP1.\+Form\+Game Class Reference}
+\label{class_t_p1_1_1_form_game}\index{TP1.FormGame@{TP1.FormGame}}
+
+
+Form\+Game Class.  
+
+
+Inheritance diagram for TP1.\+Form\+Game\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_t_p1_1_1_form_game}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_t_p1_1_1_form_game_a010d2b6f3354a71321621ef1eef37fc1}{Form\+Game}} (\mbox{\hyperlink{class_t_p1_1_1_game}{Game}} game)
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_t_p1_1_1_form_game_ab3512dde63762c3b797f07aadc282f3d}\label{class_t_p1_1_1_form_game_ab3512dde63762c3b797f07aadc282f3d}} 
+void {\bfseries End} ()
+\begin{DoxyCompactList}\small\item\em Ends the game. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_t_p1_1_1_form_game_a7b6a0c05ab880593b5ee2e9c2d550240}\label{class_t_p1_1_1_form_game_a7b6a0c05ab880593b5ee2e9c2d550240}} 
+void {\bfseries White\+Turn} ()
+\begin{DoxyCompactList}\small\item\em Changes turn to White in the view. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_t_p1_1_1_form_game_a968f556e85ba27c0b7699257ed42316a}\label{class_t_p1_1_1_form_game_a968f556e85ba27c0b7699257ed42316a}} 
+void {\bfseries Black\+Turn} ()
+\begin{DoxyCompactList}\small\item\em Changes turn to Black in the view. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+override void \mbox{\hyperlink{class_t_p1_1_1_form_game_a8e6e8c962a0f0e9d3b036fcb1d86e044}{Dispose}} (bool disposing)
+\begin{DoxyCompactList}\small\item\em Clean up any resources being used. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_t_p1_1_1_form_game_aee66376c233c5dfb69da186ceced61ed}{pnl\+Board\+\_\+\+Paint}} (object sender, Paint\+Event\+Args e)
+\begin{DoxyCompactList}\small\item\em Paints the board. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_t_p1_1_1_form_game_aa3e79e3b35597a31e52f7341913d3457}{btn\+Null\+\_\+pw\+\_\+\+Click}} (object sender, Event\+Args e)
+\begin{DoxyCompactList}\small\item\em White player ask\textquotesingle{}s a draw. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_t_p1_1_1_form_game_a07cccbaedd5c608d28361986783b7f54}{btn\+Null\+\_\+pb\+\_\+\+Click}} (object sender, Event\+Args e)
+\begin{DoxyCompactList}\small\item\em Black player ask\textquotesingle{}s for draw. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_t_p1_1_1_form_game_ae038b7afe4b5e2376b2e6656143a4331}{btn\+Resign\+\_\+pw\+\_\+\+Click}} (object sender, Event\+Args e)
+\begin{DoxyCompactList}\small\item\em White player resign\textquotesingle{}s. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_t_p1_1_1_form_game_a47af0cf5fd4181c1c48047523b3532ec}{btn\+Resign\+\_\+pb\+\_\+\+Click}} (object sender, Event\+Args e)
+\begin{DoxyCompactList}\small\item\em Black Player ask\textquotesingle{}s for draw. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_t_p1_1_1_form_game_aeb36c75724520e20abb0bc83bbc12ca0}{pnl\+Board\+\_\+\+Mouse\+Click}} (object sender, Mouse\+Event\+Args e)
+\begin{DoxyCompactList}\small\item\em Click on board. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_t_p1_1_1_form_game_ae7f183c29ba390c85d2bf05ba19e9480}\label{class_t_p1_1_1_form_game_ae7f183c29ba390c85d2bf05ba19e9480}} 
+void {\bfseries Initialize\+Component} ()
+\begin{DoxyCompactList}\small\item\em Required method for Designer support -\/ do not modify the contents of this method with the code editor. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_t_p1_1_1_form_game_a4de5e1892bae6c0ec1bb64a9d1601860}\label{class_t_p1_1_1_form_game_a4de5e1892bae6c0ec1bb64a9d1601860}} 
+\mbox{\hyperlink{class_t_p1_1_1_game}{Game}} {\bfseries \+\_\+game}
+\item 
+\mbox{\Hypertarget{class_t_p1_1_1_form_game_a8a4f81f1d58e53a1dd7d0fae70a8bcb4}\label{class_t_p1_1_1_form_game_a8a4f81f1d58e53a1dd7d0fae70a8bcb4}} 
+int {\bfseries SourceX}
+\item 
+\mbox{\Hypertarget{class_t_p1_1_1_form_game_a9635f089b240cf9fd083f455eb8162d7}\label{class_t_p1_1_1_form_game_a9635f089b240cf9fd083f455eb8162d7}} 
+int {\bfseries SourceY}
+\item 
+\mbox{\Hypertarget{class_t_p1_1_1_form_game_a197b87784eb7f5cd7a12cd881db02dea}\label{class_t_p1_1_1_form_game_a197b87784eb7f5cd7a12cd881db02dea}} 
+System.\+Component\+Model.\+IContainer {\bfseries components} = null
+\begin{DoxyCompactList}\small\item\em Required designer variable. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_t_p1_1_1_form_game_a27520314e53484e519c5854698643918}\label{class_t_p1_1_1_form_game_a27520314e53484e519c5854698643918}} 
+System.\+Windows.\+Forms.\+Panel {\bfseries pnl\+Board}
+\item 
+\mbox{\Hypertarget{class_t_p1_1_1_form_game_abe7deb72f41c5f829451b9600a1fe8b2}\label{class_t_p1_1_1_form_game_abe7deb72f41c5f829451b9600a1fe8b2}} 
+System.\+Windows.\+Forms.\+Label {\bfseries lbl\+\_\+pb}
+\item 
+\mbox{\Hypertarget{class_t_p1_1_1_form_game_aa25a1ead0e3eb289dd7fa0554e9c1944}\label{class_t_p1_1_1_form_game_aa25a1ead0e3eb289dd7fa0554e9c1944}} 
+System.\+Windows.\+Forms.\+Label {\bfseries lbl\+\_\+pw}
+\item 
+\mbox{\Hypertarget{class_t_p1_1_1_form_game_ab9fa3eaf920e059bedf5b4f94276ee80}\label{class_t_p1_1_1_form_game_ab9fa3eaf920e059bedf5b4f94276ee80}} 
+System.\+Windows.\+Forms.\+Button {\bfseries btn\+Null\+\_\+pw}
+\item 
+\mbox{\Hypertarget{class_t_p1_1_1_form_game_a5daf72ad8308045272565879796013b2}\label{class_t_p1_1_1_form_game_a5daf72ad8308045272565879796013b2}} 
+System.\+Windows.\+Forms.\+Button {\bfseries btn\+Null\+\_\+pb}
+\item 
+\mbox{\Hypertarget{class_t_p1_1_1_form_game_a2362e7d94076f9173beaf4fa86ba00de}\label{class_t_p1_1_1_form_game_a2362e7d94076f9173beaf4fa86ba00de}} 
+System.\+Windows.\+Forms.\+Button {\bfseries btn\+Resign\+\_\+pb}
+\item 
+\mbox{\Hypertarget{class_t_p1_1_1_form_game_adcd29f2b84041ecdbfa7347f5a279c17}\label{class_t_p1_1_1_form_game_adcd29f2b84041ecdbfa7347f5a279c17}} 
+System.\+Windows.\+Forms.\+Button {\bfseries btn\+Resign\+\_\+pw}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Form\+Game Class. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_t_p1_1_1_form_game_a010d2b6f3354a71321621ef1eef37fc1}\label{class_t_p1_1_1_form_game_a010d2b6f3354a71321621ef1eef37fc1}} 
+\index{TP1.FormGame@{TP1.FormGame}!FormGame@{FormGame}}
+\index{FormGame@{FormGame}!TP1.FormGame@{TP1.FormGame}}
+\doxysubsubsection{\texorpdfstring{FormGame()}{FormGame()}}
+{\footnotesize\ttfamily TP1.\+Form\+Game.\+Form\+Game (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_t_p1_1_1_game}{Game}}}]{game }\end{DoxyParamCaption})}
+
+
+
+Constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em game} & Current game\\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_t_p1_1_1_form_game_a07cccbaedd5c608d28361986783b7f54}\label{class_t_p1_1_1_form_game_a07cccbaedd5c608d28361986783b7f54}} 
+\index{TP1.FormGame@{TP1.FormGame}!btnNull\_pb\_Click@{btnNull\_pb\_Click}}
+\index{btnNull\_pb\_Click@{btnNull\_pb\_Click}!TP1.FormGame@{TP1.FormGame}}
+\doxysubsubsection{\texorpdfstring{btnNull\_pb\_Click()}{btnNull\_pb\_Click()}}
+{\footnotesize\ttfamily void TP1.\+Form\+Game.\+btn\+Null\+\_\+pb\+\_\+\+Click (\begin{DoxyParamCaption}\item[{object}]{sender,  }\item[{Event\+Args}]{e }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Black player ask\textquotesingle{}s for draw. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sender} & \\
+\hline
+{\em e} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_t_p1_1_1_form_game_aa3e79e3b35597a31e52f7341913d3457}\label{class_t_p1_1_1_form_game_aa3e79e3b35597a31e52f7341913d3457}} 
+\index{TP1.FormGame@{TP1.FormGame}!btnNull\_pw\_Click@{btnNull\_pw\_Click}}
+\index{btnNull\_pw\_Click@{btnNull\_pw\_Click}!TP1.FormGame@{TP1.FormGame}}
+\doxysubsubsection{\texorpdfstring{btnNull\_pw\_Click()}{btnNull\_pw\_Click()}}
+{\footnotesize\ttfamily void TP1.\+Form\+Game.\+btn\+Null\+\_\+pw\+\_\+\+Click (\begin{DoxyParamCaption}\item[{object}]{sender,  }\item[{Event\+Args}]{e }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+White player ask\textquotesingle{}s a draw. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sender} & \\
+\hline
+{\em e} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_t_p1_1_1_form_game_a47af0cf5fd4181c1c48047523b3532ec}\label{class_t_p1_1_1_form_game_a47af0cf5fd4181c1c48047523b3532ec}} 
+\index{TP1.FormGame@{TP1.FormGame}!btnResign\_pb\_Click@{btnResign\_pb\_Click}}
+\index{btnResign\_pb\_Click@{btnResign\_pb\_Click}!TP1.FormGame@{TP1.FormGame}}
+\doxysubsubsection{\texorpdfstring{btnResign\_pb\_Click()}{btnResign\_pb\_Click()}}
+{\footnotesize\ttfamily void TP1.\+Form\+Game.\+btn\+Resign\+\_\+pb\+\_\+\+Click (\begin{DoxyParamCaption}\item[{object}]{sender,  }\item[{Event\+Args}]{e }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Black Player ask\textquotesingle{}s for draw. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sender} & \\
+\hline
+{\em e} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_t_p1_1_1_form_game_ae038b7afe4b5e2376b2e6656143a4331}\label{class_t_p1_1_1_form_game_ae038b7afe4b5e2376b2e6656143a4331}} 
+\index{TP1.FormGame@{TP1.FormGame}!btnResign\_pw\_Click@{btnResign\_pw\_Click}}
+\index{btnResign\_pw\_Click@{btnResign\_pw\_Click}!TP1.FormGame@{TP1.FormGame}}
+\doxysubsubsection{\texorpdfstring{btnResign\_pw\_Click()}{btnResign\_pw\_Click()}}
+{\footnotesize\ttfamily void TP1.\+Form\+Game.\+btn\+Resign\+\_\+pw\+\_\+\+Click (\begin{DoxyParamCaption}\item[{object}]{sender,  }\item[{Event\+Args}]{e }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+White player resign\textquotesingle{}s. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sender} & \\
+\hline
+{\em e} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_t_p1_1_1_form_game_a8e6e8c962a0f0e9d3b036fcb1d86e044}\label{class_t_p1_1_1_form_game_a8e6e8c962a0f0e9d3b036fcb1d86e044}} 
+\index{TP1.FormGame@{TP1.FormGame}!Dispose@{Dispose}}
+\index{Dispose@{Dispose}!TP1.FormGame@{TP1.FormGame}}
+\doxysubsubsection{\texorpdfstring{Dispose()}{Dispose()}}
+{\footnotesize\ttfamily override void TP1.\+Form\+Game.\+Dispose (\begin{DoxyParamCaption}\item[{bool}]{disposing }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Clean up any resources being used. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em disposing} & true if managed resources should be disposed; otherwise, false.\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_t_p1_1_1_form_game_aeb36c75724520e20abb0bc83bbc12ca0}\label{class_t_p1_1_1_form_game_aeb36c75724520e20abb0bc83bbc12ca0}} 
+\index{TP1.FormGame@{TP1.FormGame}!pnlBoard\_MouseClick@{pnlBoard\_MouseClick}}
+\index{pnlBoard\_MouseClick@{pnlBoard\_MouseClick}!TP1.FormGame@{TP1.FormGame}}
+\doxysubsubsection{\texorpdfstring{pnlBoard\_MouseClick()}{pnlBoard\_MouseClick()}}
+{\footnotesize\ttfamily void TP1.\+Form\+Game.\+pnl\+Board\+\_\+\+Mouse\+Click (\begin{DoxyParamCaption}\item[{object}]{sender,  }\item[{Mouse\+Event\+Args}]{e }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Click on board. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sender} & \\
+\hline
+{\em e} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_t_p1_1_1_form_game_aee66376c233c5dfb69da186ceced61ed}\label{class_t_p1_1_1_form_game_aee66376c233c5dfb69da186ceced61ed}} 
+\index{TP1.FormGame@{TP1.FormGame}!pnlBoard\_Paint@{pnlBoard\_Paint}}
+\index{pnlBoard\_Paint@{pnlBoard\_Paint}!TP1.FormGame@{TP1.FormGame}}
+\doxysubsubsection{\texorpdfstring{pnlBoard\_Paint()}{pnlBoard\_Paint()}}
+{\footnotesize\ttfamily void TP1.\+Form\+Game.\+pnl\+Board\+\_\+\+Paint (\begin{DoxyParamCaption}\item[{object}]{sender,  }\item[{Paint\+Event\+Args}]{e }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Paints the board. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sender} & \\
+\hline
+{\em e} & \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Dylan/\+Documents/\+Git\+Hub/\+Prog4\+\_\+\+Projet\+\_\+\+Session\+\_\+2023/\+Solution\+TP1/\+TP1/Form\+Game.\+cs\item 
+C\+:/\+Users/\+Dylan/\+Documents/\+Git\+Hub/\+Prog4\+\_\+\+Projet\+\_\+\+Session\+\_\+2023/\+Solution\+TP1/\+TP1/Form\+Game.\+Designer.\+cs\end{DoxyCompactItemize}

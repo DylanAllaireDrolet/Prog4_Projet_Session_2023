@@ -7,11 +7,16 @@ using System.Threading.Tasks;
 
 namespace TP1
 {
+
+    /// <summary>
+    /// Rook class, child of MovedPiece
+    /// </summary>
     public class Rook : MovedPiece
     {
-        // Members
-
         // Properties
+        /// <summary>
+        /// Rook Image
+        /// </summary>
         public override Bitmap IMG
         {
             get
@@ -24,10 +29,18 @@ namespace TP1
         }
 
         // Constructors
+        /// <summary>
+        /// Default constructor
+        /// </summary>
         public Rook() : base (5)
         {
 
         }
+        /// <summary>
+        /// Rook constructor
+        /// </summary>
+        /// <param name="square">Current square</param>
+        /// <param name="color">Color of piece</param>
         public Rook(Square square, int color) : base(square, color, 5)
         {
 

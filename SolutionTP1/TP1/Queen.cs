@@ -7,11 +7,16 @@ using System.Threading.Tasks;
 
 namespace TP1
 {
+
+    /// <summary>
+    /// Queen class, child of Piece
+    /// </summary>
     public class Queen : Piece
     {
-        // Members
-        
         // Properties
+        /// <summary>
+        /// Queen Image
+        /// </summary>
         public override Bitmap IMG
         {
             get
@@ -25,10 +30,19 @@ namespace TP1
         }
 
         // Constructors
+        /// <summary>
+        /// Default constructor
+        /// </summary>
         public Queen() : base(9)
         {
 
         }
+
+        /// <summary>
+        /// Queen constructor
+        /// </summary>
+        /// <param name="square">Current square</param>
+        /// <param name="color">Color of piece</param>
         public Queen(Square square, int color) : base(square, color, 9)
         {
 

@@ -6,6 +6,9 @@ using System.Threading.Tasks;
 
 namespace TP1
 {
+    /// <summary>
+    /// Square class
+    /// </summary>
     public class Square
     {
         // Members
@@ -13,11 +16,17 @@ namespace TP1
         private Piece _me; // Piece on square
 
         // Properties
+        /// <summary>
+        /// Color of square
+        /// </summary>
         public int Color
         {
             get { return _color; }
             set { _color = value; }
         }
+        /// <summary>
+        /// Piece on me
+        /// </summary>
         public Piece Me
         {
             get { return _me; }
@@ -25,11 +34,20 @@ namespace TP1
         }
 
         // Constructors
+        /// <summary>
+        /// Default square constructor
+        /// </summary>
         public Square ()
         {
             _me = null;
             _color = 0;
         }
+
+        /// <summary>
+        /// Square constructor
+        /// </summary>
+        /// <param name="me">Piece on me</param>
+        /// <param name="color">Color of square</param>
         public Square (Piece me , int color)
         {
             _me = me;
@@ -40,6 +58,7 @@ namespace TP1
             _color = color;
             _me = me;
         }
+
         public Square(int color)
         {
             _me = null;

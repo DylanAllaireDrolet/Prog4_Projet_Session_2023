@@ -7,12 +7,14 @@ using System.Threading.Tasks;
 
 namespace TP1
 {
+    /// <summary>
+    /// King class, child of MovedPiece
+    /// </summary>
     public class King : MovedPiece
     {
-        // Members
-
-        // Properties
-
+        /// <summary>
+        /// King Image
+        /// </summary>
         public override Bitmap IMG
         {
             get 
@@ -25,11 +27,19 @@ namespace TP1
 
         }
 
-        // Constructors
+        /// <summary>
+        /// Default constructor
+        /// </summary>
         public King() : base(10)
         {
             
         }
+
+        /// <summary>
+        /// King constructor
+        /// </summary>
+        /// <param name="square">Current square</param>
+        /// <param name="color">Color of piece</param>
         public King(Square square, int color) : base(square, color, 10)
         {
 

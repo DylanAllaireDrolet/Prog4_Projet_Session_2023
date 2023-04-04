@@ -6,26 +6,46 @@ using System.Threading.Tasks;
 
 namespace TP1
 {
+
+    /// <summary>
+    /// Board class
+    /// </summary>
     public class Board
     {
         // Members
         private Square[,] _squares;
-        public const int WHITE = 1;
-        public const int BLACK = 2;
-        public const int SIZE = 8;
+        /// <summary>
+        /// Constant for White = 1
+        /// </summary>
+        public const int WHITE = 1; // White color
+        /// <summary>
+        /// Constant for Black = 2
+        /// </summary>
+        public const int BLACK = 2; // Black color
+        /// <summary>
+        /// Constant for board Size = 8
+        /// </summary>
+        public const int SIZE = 8; // Board size
 
         // Properties
+        /// <summary>
+        /// Indexer for board (2D array of Square)
+        /// </summary>
+        /// <param name="i">index at i</param>
+        /// <param name="j">index at j</param>
+        /// <returns>index at i & j = [i, j]</returns>
         public Square this[int i, int j]
         {
             get { return _squares[i, j]; }
             set { _squares[i, j] = value; }
         }
 
+        /// <summary>
+        /// Default constructor
+        /// </summary>
         public Board ()
         {
-
             _squares = new Square[8, 8];
-
             // Init square colors
             bool starter = true;
             for (int i = 0; i < 8; i++)

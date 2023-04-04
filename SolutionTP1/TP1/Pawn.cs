@@ -7,11 +7,16 @@ using System.Threading.Tasks;
 
 namespace TP1
 {
+
+    /// <summary>
+    /// Pawn Class, child of moved piece
+    /// </summary>
     public class Pawn : MovedPiece
     {
-        // Members
-        private bool enPassant;
         // Properties
+        /// <summary>
+        /// Pawn Image
+        /// </summary>
         public override Bitmap IMG
         {
             get
@@ -22,16 +27,18 @@ namespace TP1
                     return null;
             }
         }
-        public bool EnPassant
-        {
-            get { return enPassant; }
-            set { enPassant = value; }
-        }
         // Constructors
+        /// <summary>
+        /// Default property
+        /// </summary>
         public Pawn() : base(1)
         {
-            enPassant = false;
         }
+        /// <summary>
+        /// Pawn Constructor
+        /// </summary>
+        /// <param name="square">Current square</param>
+        /// <param name="color">Color of piece</param>
         public Pawn(Square square, int color) : base(square, color, 1)
         {
 

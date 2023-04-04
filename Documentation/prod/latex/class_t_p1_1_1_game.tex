@@ -1,0 +1,238 @@
+\hypertarget{class_t_p1_1_1_game}{}\doxysection{TP1.\+Game Class Reference}
+\label{class_t_p1_1_1_game}\index{TP1.Game@{TP1.Game}}
+
+
+Game Class.  
+
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_t_p1_1_1_game_aaf783dbfc9001d6d2c52a14d6b400726}{Game}} (\mbox{\hyperlink{class_t_p1_1_1_chess}{Chess}} chess)
+\begin{DoxyCompactList}\small\item\em Default constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_t_p1_1_1_game_a7ee449c8854ecc845cfdb64c0d0966a4}{Game}} (\mbox{\hyperlink{class_t_p1_1_1_player}{Player}} white, \mbox{\hyperlink{class_t_p1_1_1_player}{Player}} black, \mbox{\hyperlink{class_t_p1_1_1_chess}{Chess}} chess)
+\begin{DoxyCompactList}\small\item\em Game constructor. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_t_p1_1_1_game_a9752da909605fd87d39188eb52870424}{Game\+End}} (\mbox{\hyperlink{class_t_p1_1_1_player}{Player}} winner, \mbox{\hyperlink{class_t_p1_1_1_player}{Player}} loser, bool draw=false)
+\begin{DoxyCompactList}\small\item\em Ends the game. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_t_p1_1_1_game_a8e3e8ec594b2f86eb2bc1fa0f4805f29}{Play}} (int sourceX, int sourceY, int targetX, int targetY)
+\begin{DoxyCompactList}\small\item\em Play a turn. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_t_p1_1_1_game_aaa34f4557da2bb580694de393f411b15}\label{class_t_p1_1_1_game_aaa34f4557da2bb580694de393f411b15}} 
+\mbox{\hyperlink{class_t_p1_1_1_board}{Board}} {\bfseries Board}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Board property. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_t_p1_1_1_game_ae208c54b7a9cff9dcca011878266b2c0}\label{class_t_p1_1_1_game_ae208c54b7a9cff9dcca011878266b2c0}} 
+\mbox{\hyperlink{class_t_p1_1_1_player}{Player}} {\bfseries White\+Player}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em White player property. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_t_p1_1_1_game_a0c7fb47440c27a2be6ccb0af56bf469f}\label{class_t_p1_1_1_game_a0c7fb47440c27a2be6ccb0af56bf469f}} 
+\mbox{\hyperlink{class_t_p1_1_1_player}{Player}} {\bfseries Black\+Player}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Black player property. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_t_p1_1_1_game_ad6a0ba705cd34125ad9f62410c7ed23d}\label{class_t_p1_1_1_game_ad6a0ba705cd34125ad9f62410c7ed23d}} 
+\mbox{\hyperlink{class_t_p1_1_1_form_game}{Form\+Game}} {\bfseries My\+Form}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Current form property. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_t_p1_1_1_game_ab502c72a6265cc691dd707f3784ce5a7}\label{class_t_p1_1_1_game_ab502c72a6265cc691dd707f3784ce5a7}} 
+int {\bfseries Turn}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Current turn property. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{class_t_p1_1_1_game_a8bfa385fc79637014ce2edcd43c6aaf7}{is\+Legal\+Move}} (int sourceX, int sourceY, int targetX, int targetY, bool checking=false)
+\begin{DoxyCompactList}\small\item\em Check if the play is legal. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_t_p1_1_1_game_abe650a4c4ba55eae829804d1ab400acf}{is\+Obstructed}} (int sourceX, int sourceY, int targetX, int targetY)
+\begin{DoxyCompactList}\small\item\em Check if the path is obstructed. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_t_p1_1_1_game_a1d8eb8c2b24f7e33065b5f3a94d9cd66}{is\+Checked}} ()
+\begin{DoxyCompactList}\small\item\em Check if the king is in check. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_t_p1_1_1_game_a392541d3770c9c4a266ed9c19af65dd6}{is\+Check\+Mated}} ()
+\begin{DoxyCompactList}\small\item\em Check if it\textquotesingle{}s checkmate. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_t_p1_1_1_game_a4cb6376c42b7923a7ffb1339dc3c7fe9}\label{class_t_p1_1_1_game_a4cb6376c42b7923a7ffb1339dc3c7fe9}} 
+\mbox{\hyperlink{class_t_p1_1_1_chess}{Chess}} {\bfseries \+\_\+chess}
+\item 
+\mbox{\Hypertarget{class_t_p1_1_1_game_a9d424e260d27cb74063ea942330ce3b7}\label{class_t_p1_1_1_game_a9d424e260d27cb74063ea942330ce3b7}} 
+\mbox{\hyperlink{class_t_p1_1_1_board}{Board}} {\bfseries \+\_\+board}
+\item 
+\mbox{\Hypertarget{class_t_p1_1_1_game_a4998629c0f929e3579ad34c56914ce30}\label{class_t_p1_1_1_game_a4998629c0f929e3579ad34c56914ce30}} 
+\mbox{\hyperlink{class_t_p1_1_1_player}{Player}} {\bfseries \+\_\+pw}
+\item 
+\mbox{\Hypertarget{class_t_p1_1_1_game_ac9733256b8f3936acaf503e23149de0c}\label{class_t_p1_1_1_game_ac9733256b8f3936acaf503e23149de0c}} 
+\mbox{\hyperlink{class_t_p1_1_1_player}{Player}} {\bfseries \+\_\+pb}
+\item 
+\mbox{\Hypertarget{class_t_p1_1_1_game_a89b5b49ed3299567cae0e2e75dd36377}\label{class_t_p1_1_1_game_a89b5b49ed3299567cae0e2e75dd36377}} 
+\mbox{\hyperlink{class_t_p1_1_1_form_game}{Form\+Game}} {\bfseries \+\_\+my\+Form}
+\item 
+\mbox{\Hypertarget{class_t_p1_1_1_game_a0c41c36b81705a6f97d846e3db9a0c71}\label{class_t_p1_1_1_game_a0c41c36b81705a6f97d846e3db9a0c71}} 
+Thread {\bfseries \+\_\+thread}
+\item 
+\mbox{\Hypertarget{class_t_p1_1_1_game_adc80f5c9e2b04b48d73889561c6b77df}\label{class_t_p1_1_1_game_adc80f5c9e2b04b48d73889561c6b77df}} 
+int {\bfseries \+\_\+turn}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Game Class. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_t_p1_1_1_game_aaf783dbfc9001d6d2c52a14d6b400726}\label{class_t_p1_1_1_game_aaf783dbfc9001d6d2c52a14d6b400726}} 
+\index{TP1.Game@{TP1.Game}!Game@{Game}}
+\index{Game@{Game}!TP1.Game@{TP1.Game}}
+\doxysubsubsection{\texorpdfstring{Game()}{Game()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily TP1.\+Game.\+Game (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_t_p1_1_1_chess}{Chess}}}]{chess }\end{DoxyParamCaption})}
+
+
+
+Default constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em chess} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_t_p1_1_1_game_a7ee449c8854ecc845cfdb64c0d0966a4}\label{class_t_p1_1_1_game_a7ee449c8854ecc845cfdb64c0d0966a4}} 
+\index{TP1.Game@{TP1.Game}!Game@{Game}}
+\index{Game@{Game}!TP1.Game@{TP1.Game}}
+\doxysubsubsection{\texorpdfstring{Game()}{Game()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily TP1.\+Game.\+Game (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_t_p1_1_1_player}{Player}}}]{white,  }\item[{\mbox{\hyperlink{class_t_p1_1_1_player}{Player}}}]{black,  }\item[{\mbox{\hyperlink{class_t_p1_1_1_chess}{Chess}}}]{chess }\end{DoxyParamCaption})}
+
+
+
+Game constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em white} & white player\\
+\hline
+{\em black} & black player\\
+\hline
+{\em chess} & chess controller\\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_t_p1_1_1_game_a9752da909605fd87d39188eb52870424}\label{class_t_p1_1_1_game_a9752da909605fd87d39188eb52870424}} 
+\index{TP1.Game@{TP1.Game}!GameEnd@{GameEnd}}
+\index{GameEnd@{GameEnd}!TP1.Game@{TP1.Game}}
+\doxysubsubsection{\texorpdfstring{GameEnd()}{GameEnd()}}
+{\footnotesize\ttfamily void TP1.\+Game.\+Game\+End (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_t_p1_1_1_player}{Player}}}]{winner,  }\item[{\mbox{\hyperlink{class_t_p1_1_1_player}{Player}}}]{loser,  }\item[{bool}]{draw = {\ttfamily false} }\end{DoxyParamCaption})}
+
+
+
+Ends the game. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em winner} & Winner of game\\
+\hline
+{\em loser} & Loser of game\\
+\hline
+{\em draw} & If this is true the game is a draw\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_t_p1_1_1_game_a1d8eb8c2b24f7e33065b5f3a94d9cd66}\label{class_t_p1_1_1_game_a1d8eb8c2b24f7e33065b5f3a94d9cd66}} 
+\index{TP1.Game@{TP1.Game}!isChecked@{isChecked}}
+\index{isChecked@{isChecked}!TP1.Game@{TP1.Game}}
+\doxysubsubsection{\texorpdfstring{isChecked()}{isChecked()}}
+{\footnotesize\ttfamily bool TP1.\+Game.\+is\+Checked (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Check if the king is in check. 
+
+\begin{DoxyReturn}{Returns}
+True if the king is check, false if it isn\textquotesingle{}t in check
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_t_p1_1_1_game_a392541d3770c9c4a266ed9c19af65dd6}\label{class_t_p1_1_1_game_a392541d3770c9c4a266ed9c19af65dd6}} 
+\index{TP1.Game@{TP1.Game}!isCheckMated@{isCheckMated}}
+\index{isCheckMated@{isCheckMated}!TP1.Game@{TP1.Game}}
+\doxysubsubsection{\texorpdfstring{isCheckMated()}{isCheckMated()}}
+{\footnotesize\ttfamily bool TP1.\+Game.\+is\+Check\+Mated (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Check if it\textquotesingle{}s checkmate. 
+
+\begin{DoxyReturn}{Returns}
+True if it\textquotesingle{}s check mate and false if it isn\textquotesingle{}t
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_t_p1_1_1_game_a8bfa385fc79637014ce2edcd43c6aaf7}\label{class_t_p1_1_1_game_a8bfa385fc79637014ce2edcd43c6aaf7}} 
+\index{TP1.Game@{TP1.Game}!isLegalMove@{isLegalMove}}
+\index{isLegalMove@{isLegalMove}!TP1.Game@{TP1.Game}}
+\doxysubsubsection{\texorpdfstring{isLegalMove()}{isLegalMove()}}
+{\footnotesize\ttfamily bool TP1.\+Game.\+is\+Legal\+Move (\begin{DoxyParamCaption}\item[{int}]{sourceX,  }\item[{int}]{sourceY,  }\item[{int}]{targetX,  }\item[{int}]{targetY,  }\item[{bool}]{checking = {\ttfamily false} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Check if the play is legal. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sourceX} & Source Square on X\\
+\hline
+{\em sourceY} & Source Square on Y\\
+\hline
+{\em targetX} & Target Square on X\\
+\hline
+{\em targetY} & Target Square on Y\\
+\hline
+{\em checking} & If this is true we are not modifying the board for real\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if the move is legal, false if it isn\textquotesingle{}t legal
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_t_p1_1_1_game_abe650a4c4ba55eae829804d1ab400acf}\label{class_t_p1_1_1_game_abe650a4c4ba55eae829804d1ab400acf}} 
+\index{TP1.Game@{TP1.Game}!isObstructed@{isObstructed}}
+\index{isObstructed@{isObstructed}!TP1.Game@{TP1.Game}}
+\doxysubsubsection{\texorpdfstring{isObstructed()}{isObstructed()}}
+{\footnotesize\ttfamily bool TP1.\+Game.\+is\+Obstructed (\begin{DoxyParamCaption}\item[{int}]{sourceX,  }\item[{int}]{sourceY,  }\item[{int}]{targetX,  }\item[{int}]{targetY }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Check if the path is obstructed. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sourceX} & Source square on X\\
+\hline
+{\em sourceY} & Source square on Y\\
+\hline
+{\em targetX} & Target square on X\\
+\hline
+{\em targetY} & Target square on Y\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if the path is obstructed, false if it isn\textquotesingle{}t obstructed
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_t_p1_1_1_game_a8e3e8ec594b2f86eb2bc1fa0f4805f29}\label{class_t_p1_1_1_game_a8e3e8ec594b2f86eb2bc1fa0f4805f29}} 
+\index{TP1.Game@{TP1.Game}!Play@{Play}}
+\index{Play@{Play}!TP1.Game@{TP1.Game}}
+\doxysubsubsection{\texorpdfstring{Play()}{Play()}}
+{\footnotesize\ttfamily bool TP1.\+Game.\+Play (\begin{DoxyParamCaption}\item[{int}]{sourceX,  }\item[{int}]{sourceY,  }\item[{int}]{targetX,  }\item[{int}]{targetY }\end{DoxyParamCaption})}
+
+
+
+Play a turn. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sourceX} & Source square on X\\
+\hline
+{\em sourceY} & Source square on Y\\
+\hline
+{\em targetX} & Target square on X\\
+\hline
+{\em targetY} & Target square on Y\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+If the turn was valid
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Dylan/\+Documents/\+Git\+Hub/\+Prog4\+\_\+\+Projet\+\_\+\+Session\+\_\+2023/\+Solution\+TP1/\+TP1/Game.\+cs\end{DoxyCompactItemize}
