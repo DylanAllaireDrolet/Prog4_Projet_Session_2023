@@ -256,7 +256,7 @@ namespace TP1
                         return false;
 
                     // Perform the castling
-                    ((Rook)_board[sourceY, sourceX].Me).Moved = true;
+                    ((King)_board[sourceY, sourceX].Me).Moved = true;
                     ((Rook)_board[targetY, targetX].Me).Moved = true;
 
                     _board[sourceY, newKingX].Me = _board[sourceY, sourceX].Me;
@@ -394,6 +394,7 @@ namespace TP1
                                     if (checking)
                                         _turn = _turn == Chess.WHITE ? Chess.BLACK : Chess.WHITE;
                                     return true;
+
                                 }
 
                                 if (checking)

@@ -1,0 +1,40 @@
+C:\Users\Dylan\Documents\GitHub\Prog4_Projet_Session_2023\SolutionTP1\TP1\bin\Debug\TP1.exe.config
+C:\Users\Dylan\Documents\GitHub\Prog4_Projet_Session_2023\SolutionTP1\TP1\bin\Debug\TP1.exe
+C:\Users\Dylan\Documents\GitHub\Prog4_Projet_Session_2023\SolutionTP1\TP1\bin\Debug\TP1.pdb
+C:\Users\Dylan\Documents\GitHub\Prog4_Projet_Session_2023\SolutionTP1\TP1\obj\Debug\TP1.csproj.AssemblyReference.cache
+C:\Users\Dylan\Documents\GitHub\Prog4_Projet_Session_2023\SolutionTP1\TP1\obj\Debug\TP1.csproj.SuggestedBindingRedirects.cache
+C:\Users\Dylan\Documents\GitHub\Prog4_Projet_Session_2023\SolutionTP1\TP1\obj\Debug\TP1.FormMenu.resources
+C:\Users\Dylan\Documents\GitHub\Prog4_Projet_Session_2023\SolutionTP1\TP1\obj\Debug\TP1.Properties.Resources.resources
+C:\Users\Dylan\Documents\GitHub\Prog4_Projet_Session_2023\SolutionTP1\TP1\obj\Debug\TP1.csproj.GenerateResource.cache
+C:\Users\Dylan\Documents\GitHub\Prog4_Projet_Session_2023\SolutionTP1\TP1\obj\Debug\TP1.csproj.CoreCompileInputs.cache
+C:\Users\Dylan\Documents\GitHub\Prog4_Projet_Session_2023\SolutionTP1\TP1\obj\Debug\TP1.exe
+C:\Users\Dylan\Documents\GitHub\Prog4_Projet_Session_2023\SolutionTP1\TP1\obj\Debug\TP1.pdb
+C:\Users\Dylan\Documents\GitHub\Prog4_Projet_Session_2023\SolutionTP1\TP1\obj\Debug\TP1.FormGame.resources
+C:\Users\6188793\Documents\GitHub\Prog4_Projet_Session_2023\SolutionTP1\TP1\bin\Debug\TP1.exe.config
+C:\Users\6188793\Documents\GitHub\Prog4_Projet_Session_2023\SolutionTP1\TP1\bin\Debug\TP1.exe
+C:\Users\6188793\Documents\GitHub\Prog4_Projet_Session_2023\SolutionTP1\TP1\bin\Debug\TP1.pdb
+C:\Users\6188793\Documents\GitHub\Prog4_Projet_Session_2023\SolutionTP1\TP1\obj\Debug\TP1.csproj.AssemblyReference.cache
+C:\Users\6188793\Documents\GitHub\Prog4_Projet_Session_2023\SolutionTP1\TP1\obj\Debug\TP1.csproj.SuggestedBindingRedirects.cache
+C:\Users\6188793\Documents\GitHub\Prog4_Projet_Session_2023\SolutionTP1\TP1\obj\Debug\TP1.FormGame.resources
+C:\Users\6188793\Documents\GitHub\Prog4_Projet_Session_2023\SolutionTP1\TP1\obj\Debug\TP1.FormMenu.resources
+C:\Users\6188793\Documents\GitHub\Prog4_Projet_Session_2023\SolutionTP1\TP1\obj\Debug\TP1.Properties.Resources.resources
+C:\Users\6188793\Documents\GitHub\Prog4_Projet_Session_2023\SolutionTP1\TP1\obj\Debug\TP1.csproj.GenerateResource.cache
+C:\Users\6188793\Documents\GitHub\Prog4_Projet_Session_2023\SolutionTP1\TP1\obj\Debug\TP1.csproj.CoreCompileInputs.cache
+C:\Users\6188793\Documents\GitHub\Prog4_Projet_Session_2023\SolutionTP1\TP1\obj\Debug\TP1.exe
+C:\Users\6188793\Documents\GitHub\Prog4_Projet_Session_2023\SolutionTP1\TP1\obj\Debug\TP1.pdb
+C:\Users\Dylan\Documents\GitHub\Prog4_Projet_Session_2023\SolutionTP1\TP1\obj\Debug\TP1.FormPromotion.resources
+C:\Users\Dylan\Documents\GitHub\Prog4_Projet_Session_2023\SolutionTP1\TP1\bin\Debug\TP1.xml
+C:\Users\Dylan\Documents\GitHub\Prog4_Projet_Session_2023\Testing (You can ignore this)\SolutionTP1\TP1\bin\Debug\TP1.exe.config
+C:\Users\Dylan\Documents\GitHub\Prog4_Projet_Session_2023\Testing (You can ignore this)\SolutionTP1\TP1\bin\Debug\TP1.xml
+C:\Users\Dylan\Documents\GitHub\Prog4_Projet_Session_2023\Testing (You can ignore this)\SolutionTP1\TP1\bin\Debug\TP1.exe
+C:\Users\Dylan\Documents\GitHub\Prog4_Projet_Session_2023\Testing (You can ignore this)\SolutionTP1\TP1\bin\Debug\TP1.pdb
+C:\Users\Dylan\Documents\GitHub\Prog4_Projet_Session_2023\Testing (You can ignore this)\SolutionTP1\TP1\obj\Debug\TP1.csproj.AssemblyReference.cache
+C:\Users\Dylan\Documents\GitHub\Prog4_Projet_Session_2023\Testing (You can ignore this)\SolutionTP1\TP1\obj\Debug\TP1.csproj.SuggestedBindingRedirects.cache
+C:\Users\Dylan\Documents\GitHub\Prog4_Projet_Session_2023\Testing (You can ignore this)\SolutionTP1\TP1\obj\Debug\TP1.FormGame.resources
+C:\Users\Dylan\Documents\GitHub\Prog4_Projet_Session_2023\Testing (You can ignore this)\SolutionTP1\TP1\obj\Debug\TP1.FormMenu.resources
+C:\Users\Dylan\Documents\GitHub\Prog4_Projet_Session_2023\Testing (You can ignore this)\SolutionTP1\TP1\obj\Debug\TP1.FormPromotion.resources
+C:\Users\Dylan\Documents\GitHub\Prog4_Projet_Session_2023\Testing (You can ignore this)\SolutionTP1\TP1\obj\Debug\TP1.Properties.Resources.resources
+C:\Users\Dylan\Documents\GitHub\Prog4_Projet_Session_2023\Testing (You can ignore this)\SolutionTP1\TP1\obj\Debug\TP1.csproj.GenerateResource.cache
+C:\Users\Dylan\Documents\GitHub\Prog4_Projet_Session_2023\Testing (You can ignore this)\SolutionTP1\TP1\obj\Debug\TP1.csproj.CoreCompileInputs.cache
+C:\Users\Dylan\Documents\GitHub\Prog4_Projet_Session_2023\Testing (You can ignore this)\SolutionTP1\TP1\obj\Debug\TP1.exe
+C:\Users\Dylan\Documents\GitHub\Prog4_Projet_Session_2023\Testing (You can ignore this)\SolutionTP1\TP1\obj\Debug\TP1.pdb

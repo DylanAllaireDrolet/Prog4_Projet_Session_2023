@@ -109,7 +109,11 @@ namespace TP1
         /// <param name="e"></param>
         private void btnNull_pw_Click(object sender, EventArgs e)
         {
-
+            DialogResult result = MessageBox.Show(_game.BlackPlayer.Name + " do you accept the draw ?", "Draw ?", MessageBoxButtons.YesNo);
+            if (result == DialogResult.Yes)
+            {
+                _game.GameEnd(_game.BlackPlayer, _game.WhitePlayer, true);
+            }
         }
         /// <summary>
         /// Black player ask's for draw

@@ -1,3 +1,4 @@
-Username 0 1 0
-Dylan 3 4 0
-Mégane 4 2 0
+Username 0 2 1
+Dylan 4 4 1
+Mégane 5 2 1
+Charles 0 1 1
