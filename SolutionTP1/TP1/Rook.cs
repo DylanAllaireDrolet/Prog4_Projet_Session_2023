@@ -45,5 +45,26 @@ namespace TP1
         {
 
         }
+
+        public override bool isLegalMove(Board board, int sourceX, int sourceY, int targetX, int targetY, int turn)
+        {
+            // Rook movement
+
+            if (board[sourceY, sourceX].Me is Rook)
+            {
+                if (sourceX == targetX || sourceY == targetY)
+                {
+                    if (!isObstructed(board, sourceX, sourceY, targetX, targetY))
+                    {
+                        if (!(board[targetY, targetX].Me is Piece) || board[targetY, targetX].Me.Color != turn)
+                        {
+                            return true;
+                        }
+                    }
+                }
+            }
+            // Rook movement - END
+            return false;
+        }
     }
 }

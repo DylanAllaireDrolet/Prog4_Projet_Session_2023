@@ -41,6 +41,7 @@
             this.lsbPlayers = new System.Windows.Forms.ListBox();
             this.btnNewGame = new System.Windows.Forms.Button();
             this.btnPlayers = new System.Windows.Forms.Button();
+            this.lblWLD = new System.Windows.Forms.Label();
             this.menuStrip1.SuspendLayout();
             this.pnlPlayers.SuspendLayout();
             this.SuspendLayout();
@@ -53,7 +54,7 @@
             this.StripMenuControl});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(868, 52);
+            this.menuStrip1.Size = new System.Drawing.Size(868, 49);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -63,25 +64,26 @@
             this.StripMenuNewGame,
             this.StripMenuPlayers});
             this.StripMenuControl.Name = "StripMenuControl";
-            this.StripMenuControl.Size = new System.Drawing.Size(119, 48);
+            this.StripMenuControl.Size = new System.Drawing.Size(119, 45);
             this.StripMenuControl.Text = "Menu";
             // 
             // StripMenuNewGame
             // 
             this.StripMenuNewGame.Name = "StripMenuNewGame";
-            this.StripMenuNewGame.Size = new System.Drawing.Size(448, 54);
+            this.StripMenuNewGame.Size = new System.Drawing.Size(327, 54);
             this.StripMenuNewGame.Text = "New game";
             this.StripMenuNewGame.Click += new System.EventHandler(this.StripMenuNewGame_Click);
             // 
             // StripMenuPlayers
             // 
             this.StripMenuPlayers.Name = "StripMenuPlayers";
-            this.StripMenuPlayers.Size = new System.Drawing.Size(448, 54);
+            this.StripMenuPlayers.Size = new System.Drawing.Size(327, 54);
             this.StripMenuPlayers.Text = "Players";
             this.StripMenuPlayers.Click += new System.EventHandler(this.StripMenuPlayers_Click);
             // 
             // pnlPlayers
             // 
+            this.pnlPlayers.Controls.Add(this.lblWLD);
             this.pnlPlayers.Controls.Add(this.btnRemove);
             this.pnlPlayers.Controls.Add(this.lblUsername);
             this.pnlPlayers.Controls.Add(this.tbName);
@@ -95,7 +97,7 @@
             // 
             // btnRemove
             // 
-            this.btnRemove.Location = new System.Drawing.Point(162, 219);
+            this.btnRemove.Location = new System.Drawing.Point(162, 269);
             this.btnRemove.Name = "btnRemove";
             this.btnRemove.Size = new System.Drawing.Size(179, 61);
             this.btnRemove.TabIndex = 4;
@@ -107,7 +109,7 @@
             // lblUsername
             // 
             this.lblUsername.AutoSize = true;
-            this.lblUsername.Location = new System.Drawing.Point(15, 22);
+            this.lblUsername.Location = new System.Drawing.Point(15, 72);
             this.lblUsername.Name = "lblUsername";
             this.lblUsername.Size = new System.Drawing.Size(159, 32);
             this.lblUsername.TabIndex = 3;
@@ -115,14 +117,14 @@
             // 
             // tbName
             // 
-            this.tbName.Location = new System.Drawing.Point(178, 19);
+            this.tbName.Location = new System.Drawing.Point(178, 69);
             this.tbName.Name = "tbName";
             this.tbName.Size = new System.Drawing.Size(331, 38);
             this.tbName.TabIndex = 2;
             // 
             // btnAddPlayer
             // 
-            this.btnAddPlayer.Location = new System.Drawing.Point(162, 116);
+            this.btnAddPlayer.Location = new System.Drawing.Point(162, 166);
             this.btnAddPlayer.Name = "btnAddPlayer";
             this.btnAddPlayer.Size = new System.Drawing.Size(179, 61);
             this.btnAddPlayer.TabIndex = 1;
@@ -134,10 +136,10 @@
             // 
             this.lsbPlayers.FormattingEnabled = true;
             this.lsbPlayers.ItemHeight = 31;
-            this.lsbPlayers.Location = new System.Drawing.Point(524, 3);
+            this.lsbPlayers.Location = new System.Drawing.Point(524, 65);
             this.lsbPlayers.Name = "lsbPlayers";
             this.lsbPlayers.SelectionMode = System.Windows.Forms.SelectionMode.MultiSimple;
-            this.lsbPlayers.Size = new System.Drawing.Size(316, 531);
+            this.lsbPlayers.Size = new System.Drawing.Size(316, 469);
             this.lsbPlayers.TabIndex = 0;
             this.lsbPlayers.SelectedIndexChanged += new System.EventHandler(this.lsbPlayers_SelectedIndexChanged);
             // 
@@ -160,6 +162,15 @@
             this.btnPlayers.Text = "Players";
             this.btnPlayers.UseVisualStyleBackColor = true;
             this.btnPlayers.Click += new System.EventHandler(this.btnPlayers_Click);
+            // 
+            // lblWLD
+            // 
+            this.lblWLD.AutoSize = true;
+            this.lblWLD.Location = new System.Drawing.Point(623, 25);
+            this.lblWLD.Name = "lblWLD";
+            this.lblWLD.Size = new System.Drawing.Size(90, 32);
+            this.lblWLD.TabIndex = 4;
+            this.lblWLD.Text = "W L D";
             // 
             // FormMenu
             // 
@@ -200,6 +211,7 @@
         private System.Windows.Forms.Button btnNewGame;
         private System.Windows.Forms.Button btnPlayers;
         private System.Windows.Forms.Button btnRemove;
+        private System.Windows.Forms.Label lblWLD;
     }
 }
 

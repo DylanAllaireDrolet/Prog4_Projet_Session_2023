@@ -109,6 +109,7 @@ namespace TP1
                 sw.WriteLine(tbName.Text + " 0" + " 0" + " 0");
                 sw.Close();
                 lsbPlayers.Items.Insert(0, tbName.Text + " 0" + " 0" + " 0");
+                _players.Add(new Player(tbName.Text));
             }
             else
             {

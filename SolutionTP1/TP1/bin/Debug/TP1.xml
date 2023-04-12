@@ -216,28 +216,7 @@
             <param name="targetY">Target square on Y</param>
             <returns>If the turn was valid</returns>
         </member>
-        <member name="M:TP1.Game.isLegalMove(System.Int32,System.Int32,System.Int32,System.Int32,System.Boolean)">
-            <summary>
-            Check if the play is legal
-            </summary>
-            <param name="sourceX">Source Square on X</param>
-            <param name="sourceY">Source Square on Y</param>
-            <param name="targetX">Target Square on X</param>
-            <param name="targetY">Target Square on Y</param>
-            <param name="checking">If this is true we are not modifying the board for real</param>
-            <returns>True if the move is legal, false if it isn't legal</returns>
-        </member>
-        <member name="M:TP1.Game.isObstructed(System.Int32,System.Int32,System.Int32,System.Int32)">
-            <summary>
-            Check if the path is obstructed
-            </summary>
-            <param name="sourceX">Source square on X</param>
-            <param name="sourceY">Source square on Y</param>
-            <param name="targetX">Target square on X</param>
-            <param name="targetY">Target square on Y</param>
-            <returns>True if the path is obstructed, false if it isn't obstructed</returns>
-        </member>
-        <member name="M:TP1.Game.isChecked">
+        <member name="M:TP1.Game.isChecked(TP1.Board)">
             <summary>
             Check if the king is in check
             </summary>
@@ -408,6 +387,16 @@
             <param name="square">Current square</param>
             <param name="color">Color of piece</param>
             <param name="value">Value of piece</param>
+        </member>
+        <member name="M:TP1.Piece.isObstructed(TP1.Board,System.Int32,System.Int32,System.Int32,System.Int32)">
+            <summary>
+            Check if the path is obstructed
+            </summary>
+            <param name="sourceX">Source square on X</param>
+            <param name="sourceY">Source square on Y</param>
+            <param name="targetX">Target square on X</param>
+            <param name="targetY">Target square on Y</param>
+            <returns>True if the path is obstructed, false if it isn't obstructed</returns>
         </member>
         <member name="T:TP1.Player">
             <summary>

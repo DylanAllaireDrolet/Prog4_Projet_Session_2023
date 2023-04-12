@@ -48,5 +48,26 @@ namespace TP1
         {
 
         }
+        public override bool isLegalMove(Board board, int sourceX, int sourceY, int targetX, int targetY, int turn)
+        {
+            // Bishop Movement
+
+            if (board[sourceY, sourceX].Me is Bishop)
+            {
+                if (Math.Abs(targetX - sourceX) == Math.Abs(targetY - sourceY))
+                {
+                    if (!isObstructed(board, sourceX, sourceY, targetX, targetY))
+                    {
+                        if (!(board[targetY, targetX].Me is Piece) || board[targetY, targetX].Me.Color != turn)
+                        {
+                            return true;
+                        }
+                    }
+                }
+            }
+            // Bishop movement - END
+            // ----------------------------
+            return false;
+        }
     }
 }

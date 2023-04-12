@@ -10,7 +10,7 @@ namespace TP1
     /// <summary>
     /// MovedPiece Class, child of Piece
     /// </summary>
-    public class MovedPiece : Piece
+    public abstract class MovedPiece : Piece
     {
         // Members
         private bool _moved; // If piece has moved
@@ -51,5 +51,8 @@ namespace TP1
         {
             _moved = false;
         }
+
+
+        public abstract override bool isLegalMove(Board board, int sourceX, int sourceY, int targetX, int targetY, int turn);
     }
 }

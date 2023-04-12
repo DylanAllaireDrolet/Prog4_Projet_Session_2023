@@ -44,5 +44,48 @@ namespace TP1
         {
 
         }
+
+        public bool Castling(Board board, int sourceX, int sourceY, int targetX, int targetY, int turn)
+        {
+            // Castling
+            if (board[sourceY, sourceX].Me is King && board[sourceY, sourceX].Me.Color == turn && board[targetY, targetX].Me is Rook && sourceY == targetY)
+            {
+                // Check if the king and rook have not moved
+                if (!((King)board[sourceY, sourceX].Me).Moved && !((Rook)board[targetY, targetX].Me).Moved)
+                {
+                    int direction = targetX - sourceX > 0 ? 1 : -1;
+                    int rookX = direction > 0 ? 7 : 0;
+                    int newKingX = sourceX + (direction * 2);
+
+                    // Make's sure there's no pieces between
+                    for (int x = sourceX + direction; x != rookX; x += direction)
+                    {
+                        if (board[sourceY, x].Me != null)
+                            return false;
+                    }
+                    return true;
+                }
+            }
+            return false;
+        }
+
+        public override bool isLegalMove(Board board, int sourceX, int sourceY, int targetX, int targetY, int turn)
+        {
+            // King movement
+            if (board[sourceY, sourceX].Me is King)
+            {
+                if (Math.Abs(sourceX - targetX) <= 1 && Math.Abs(sourceY - targetY) <= 1)
+                {
+                    if (!(board[targetY, targetX].Me is Piece) || board[targetY, targetX].Me.Color != turn)
+                    {
+                        return true;
+                    }
+                }
+            }
+            // King movement - END
+            // --------------------------------------
+
+            return false;
+        }
     }
 }

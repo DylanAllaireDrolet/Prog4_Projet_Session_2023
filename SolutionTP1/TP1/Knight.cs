@@ -45,5 +45,25 @@ namespace TP1
         {
 
         }
+
+        public override bool isLegalMove(Board board, int sourceX, int sourceY, int targetX, int targetY, int turn)
+        {
+            // Knight movement
+
+            if (board[sourceY, sourceX].Me is Knight)
+            {
+                if ((Math.Abs(targetX - sourceX) == 1 && Math.Abs(targetY - sourceY) == 2) ||
+                    (Math.Abs(targetX - sourceX) == 2 && Math.Abs(targetY - sourceY) == 1))
+                {
+                    if (!(board[targetY, targetX].Me is Piece) || board[targetY, targetX].Me.Color != turn)
+                    {
+                        return true;
+                    }
+                }
+            }
+            // Knight movement - END
+            // ------------------------------
+            return false;
+        }
     }
 }

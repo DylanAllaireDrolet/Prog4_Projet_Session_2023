@@ -22,5 +22,10 @@ namespace TP1
         {
             this.Color = color;
         }
+
+        public override bool isLegalMove(Board board, int sourceX, int sourceY, int targetX, int targetY, int turn)
+        {
+            return false;
+        }
     }
 }

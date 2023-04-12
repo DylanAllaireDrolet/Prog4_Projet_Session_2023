@@ -11,7 +11,7 @@ namespace TP1
     /// <summary>
     /// Piece Class
     /// </summary>
-    public class Piece
+    public abstract class Piece
     {
         // Members
         private Square _mySquare; // My current square
@@ -83,5 +83,38 @@ namespace TP1
             _color = color;
             _value = value;
         }
+
+        // Help ressources : Stack overflow and github for obstructions
+        /// <summary>
+        /// Check if the path is obstructed
+        /// </summary>
+        /// <param name="sourceX">Source square on X</param>
+        /// <param name="sourceY">Source square on Y</param>
+        /// <param name="targetX">Target square on X</param>
+        /// <param name="targetY">Target square on Y</param>
+        /// <returns>True if the path is obstructed, false if it isn't obstructed</returns>
+        public static bool isObstructed(Board board, int sourceX, int sourceY, int targetX, int targetY)
+        {
+            int dirX = (targetX - sourceX) / Math.Max(Math.Abs(targetX - sourceX), 1);
+            int dirY = (targetY - sourceY) / Math.Max(Math.Abs(targetY - sourceY), 1);
+            int x = sourceX + dirX;
+            int y = sourceY + dirY;
+
+            while (x != targetX || y != targetY)
+            {
+                if (board[y, x].Me is Piece)
+                {
+                    return true;
+                }
+
+                x += dirX;
+                y += dirY;
+            }
+
+            return false;
+        }
+
+        public abstract bool isLegalMove(Board board, int sourceX, int sourceY, int targetX, int targetY, int turn);
+
     }
 }
