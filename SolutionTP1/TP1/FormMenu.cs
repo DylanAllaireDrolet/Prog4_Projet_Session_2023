@@ -166,7 +166,13 @@ namespace TP1
                 int pw = _players.FindIndex(x => x == white);
                 int pb = _players.FindIndex(x => x == black);
 
-                _chess.newGame(_players[pw], _players[pb]);
+                // Random to make it so it's random who starts
+                Random rand = new Random();
+                int randInt = rand.Next(0, 2);
+                if (randInt > 0) 
+                    _chess.newGame(_players[pw], _players[pb]);
+                else
+                    _chess.newGame(_players[pb], _players[pw]);
             }
             else
                 MessageBox.Show("Please choose 2 players (CTRL + CLICK TO CHOOSE 2)", "Instructions");

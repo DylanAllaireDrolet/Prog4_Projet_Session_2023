@@ -50,32 +50,36 @@ namespace TP1
             // Pawn movement
             if (board[sourceY, sourceX].Me is Pawn)
             {
-                // Eating a piece
+
+
                 if (sourceX != targetX)
                 {
-                    if (Math.Abs(sourceY - targetY) == 1 && Math.Abs(sourceX - targetX) == 1)
-                    {
-                        if (board[targetY, targetX].Me is Piece && board[targetY, targetX].Me.Color != turn)
+                    int tDirection = turn == Chess.WHITE ? 1 : -1;
+                    if (sourceY + tDirection == targetY) {
+                        if (Math.Abs(sourceY - targetY) == 1 && Math.Abs(sourceX - targetX) == 1)
                         {
-                            if (board[targetY, targetX].Me is EnPassant)
+                            if (board[targetY, targetX].Me is Piece && board[targetY, targetX].Me.Color != turn)
                             {
-                                int direction = board[targetY, targetX].Me.Color == Chess.WHITE ? 1 : -1;
-                                board[targetY + direction, targetX].Me = null;
-                            }
-
-                            // Promotion
-                            if (targetY == 0 || targetY == 7)
-                            {
-                                FormPromotion frm = new FormPromotion();
-                                if (frm.ShowDialog() == DialogResult.OK)
+                                if (board[targetY, targetX].Me is EnPassant)
                                 {
-                                    Piece promotedPiece = frm.SelectedPiece;
-                                    promotedPiece.Color = board[sourceY, sourceX].Me.Color;
-                                    board[sourceY, sourceX].Me = promotedPiece;
+                                    int direction = board[targetY, targetX].Me.Color == Chess.WHITE ? 1 : -1;
+                                    board[targetY + direction, targetX].Me = null;
+                                }
+
+                                // Promotion
+                                if (targetY == 0 || targetY == 7)
+                                {
+                                    FormPromotion frm = new FormPromotion();
+                                    if (frm.ShowDialog() == DialogResult.OK)
+                                    {
+                                        Piece promotedPiece = frm.SelectedPiece;
+                                        promotedPiece.Color = board[sourceY, sourceX].Me.Color;
+                                        board[sourceY, sourceX].Me = promotedPiece;
+                                    }
+                                    return true;
                                 }
                                 return true;
                             }
-                            return true;
                         }
                     }
                 }

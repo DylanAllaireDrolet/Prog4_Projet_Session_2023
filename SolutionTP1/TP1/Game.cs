@@ -235,6 +235,8 @@ namespace TP1
                         _board[sourceY, sourceX].Me = null;
                         _board[sourceY, newKingX - direction].Me = _board[sourceY, rookX].Me;
                         _board[sourceY, rookX].Me = null;
+                        _turn = _turn == Chess.WHITE ? Chess.BLACK : Chess.WHITE;
+                        return true;
                     }
                 }
 
