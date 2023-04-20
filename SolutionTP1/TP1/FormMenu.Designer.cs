@@ -34,6 +34,7 @@
             this.StripMenuNewGame = new System.Windows.Forms.ToolStripMenuItem();
             this.StripMenuPlayers = new System.Windows.Forms.ToolStripMenuItem();
             this.pnlPlayers = new System.Windows.Forms.Panel();
+            this.lblWLD = new System.Windows.Forms.Label();
             this.btnRemove = new System.Windows.Forms.Button();
             this.lblUsername = new System.Windows.Forms.Label();
             this.tbName = new System.Windows.Forms.TextBox();
@@ -41,7 +42,7 @@
             this.lsbPlayers = new System.Windows.Forms.ListBox();
             this.btnNewGame = new System.Windows.Forms.Button();
             this.btnPlayers = new System.Windows.Forms.Button();
-            this.lblWLD = new System.Windows.Forms.Label();
+            this.StripMenuItemSpecialGame = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.pnlPlayers.SuspendLayout();
             this.SuspendLayout();
@@ -54,7 +55,7 @@
             this.StripMenuControl});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(868, 49);
+            this.menuStrip1.Size = new System.Drawing.Size(868, 52);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -64,20 +65,22 @@
             this.StripMenuNewGame,
             this.StripMenuPlayers});
             this.StripMenuControl.Name = "StripMenuControl";
-            this.StripMenuControl.Size = new System.Drawing.Size(119, 45);
+            this.StripMenuControl.Size = new System.Drawing.Size(119, 48);
             this.StripMenuControl.Text = "Menu";
             // 
             // StripMenuNewGame
             // 
+            this.StripMenuNewGame.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.StripMenuItemSpecialGame});
             this.StripMenuNewGame.Name = "StripMenuNewGame";
-            this.StripMenuNewGame.Size = new System.Drawing.Size(327, 54);
+            this.StripMenuNewGame.Size = new System.Drawing.Size(448, 54);
             this.StripMenuNewGame.Text = "New game";
             this.StripMenuNewGame.Click += new System.EventHandler(this.StripMenuNewGame_Click);
             // 
             // StripMenuPlayers
             // 
             this.StripMenuPlayers.Name = "StripMenuPlayers";
-            this.StripMenuPlayers.Size = new System.Drawing.Size(327, 54);
+            this.StripMenuPlayers.Size = new System.Drawing.Size(448, 54);
             this.StripMenuPlayers.Text = "Players";
             this.StripMenuPlayers.Click += new System.EventHandler(this.StripMenuPlayers_Click);
             // 
@@ -94,6 +97,15 @@
             this.pnlPlayers.Size = new System.Drawing.Size(843, 563);
             this.pnlPlayers.TabIndex = 1;
             this.pnlPlayers.Visible = false;
+            // 
+            // lblWLD
+            // 
+            this.lblWLD.AutoSize = true;
+            this.lblWLD.Location = new System.Drawing.Point(623, 25);
+            this.lblWLD.Name = "lblWLD";
+            this.lblWLD.Size = new System.Drawing.Size(90, 32);
+            this.lblWLD.TabIndex = 4;
+            this.lblWLD.Text = "W L D";
             // 
             // btnRemove
             // 
@@ -163,14 +175,12 @@
             this.btnPlayers.UseVisualStyleBackColor = true;
             this.btnPlayers.Click += new System.EventHandler(this.btnPlayers_Click);
             // 
-            // lblWLD
+            // StripMenuItemSpecialGame
             // 
-            this.lblWLD.AutoSize = true;
-            this.lblWLD.Location = new System.Drawing.Point(623, 25);
-            this.lblWLD.Name = "lblWLD";
-            this.lblWLD.Size = new System.Drawing.Size(90, 32);
-            this.lblWLD.TabIndex = 4;
-            this.lblWLD.Text = "W L D";
+            this.StripMenuItemSpecialGame.Name = "StripMenuItemSpecialGame";
+            this.StripMenuItemSpecialGame.Size = new System.Drawing.Size(448, 54);
+            this.StripMenuItemSpecialGame.Text = "Special game";
+            this.StripMenuItemSpecialGame.Click += new System.EventHandler(this.StripMenuItemSpecialGame_Click);
             // 
             // FormMenu
             // 
@@ -212,6 +222,7 @@
         private System.Windows.Forms.Button btnPlayers;
         private System.Windows.Forms.Button btnRemove;
         private System.Windows.Forms.Label lblWLD;
+        private System.Windows.Forms.ToolStripMenuItem StripMenuItemSpecialGame;
     }
 }
 

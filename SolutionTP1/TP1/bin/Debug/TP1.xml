@@ -26,6 +26,13 @@
             <param name="square">Current square</param>
             <param name="color">Current color</param>
         </member>
+        <member name="M:TP1.Capybara.#ctor(TP1.Square,System.Int32)">
+            <summary>
+            Capybara constructor
+            </summary>
+            <param name="square">Current square</param>
+            <param name="color">Color of piece</param>
+        </member>
         <member name="T:TP1.EnPassant">
             <summary>
             EnPassant class, child of Piece
@@ -190,7 +197,7 @@
             </summary>
             <param name="chess"></param>
         </member>
-        <member name="M:TP1.Game.#ctor(TP1.Player,TP1.Player,TP1.Chess)">
+        <member name="M:TP1.Game.#ctor(TP1.Player,TP1.Player,TP1.Chess,System.Int32)">
             <summary>
             Game constructor
             </summary>
@@ -249,7 +256,7 @@
             </summary>
         </member>
         <!-- Badly formed XML comment ignored for member "P:TP1.Board.Item(System.Int32,System.Int32)" -->
-        <member name="M:TP1.Board.#ctor">
+        <member name="M:TP1.Board.#ctor(System.Int32)">
             <summary>
             Default constructor
             </summary>
@@ -599,6 +606,13 @@
             <summary>
             New game for testing (without players)
             </summary>
+        </member>
+        <member name="M:TP1.Prince.#ctor(TP1.Square,System.Int32)">
+            <summary>
+            Prince constructor
+            </summary>
+            <param name="square">Current square</param>
+            <param name="color">Color of piece</param>
         </member>
         <member name="T:TP1.Queen">
             <summary>

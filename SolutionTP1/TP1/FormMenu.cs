@@ -183,5 +183,30 @@ namespace TP1
         {
             btnNewGame_Click(sender, e);
         }
+
+        private void StripMenuItemSpecialGame_Click(object sender, EventArgs e)
+        {
+            pnlPlayers.Visible = true;
+            if (lsbPlayers.SelectedItems.Count == 2)
+            {
+                string[] player1 = lsbPlayers.SelectedItems[0].ToString().Split(' ');
+                string[] player2 = lsbPlayers.SelectedItems[1].ToString().Split(' ');
+
+                Player white = new Player(player1[0], int.Parse(player1[1]), int.Parse(player1[2]), int.Parse(player1[3]));
+                Player black = new Player(player2[0], int.Parse(player2[1]), int.Parse(player2[2]), int.Parse(player2[3]));
+                int pw = _players.FindIndex(x => x == white);
+                int pb = _players.FindIndex(x => x == black);
+
+                // Random to make it so it's random who starts
+                Random rand = new Random();
+                int randInt = rand.Next(0, 2);
+                if (randInt > 0)
+                    _chess.newGame(_players[pw], _players[pb], Chess.CAPYBARA_PRINCE);
+                else
+                    _chess.newGame(_players[pb], _players[pw]);
+            }
+            else
+                MessageBox.Show("Please choose 2 players (CTRL + CLICK TO CHOOSE 2)", "Instructions");
+        }
     }
 }

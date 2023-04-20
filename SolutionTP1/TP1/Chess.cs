@@ -11,6 +11,7 @@ namespace TP1
     /// </summary>
     public class Chess
     {
+        public const int CAPYBARA_PRINCE = 1;
         /// <summary>
         /// Entry point of program
         /// </summary>
@@ -81,9 +82,13 @@ namespace TP1
         /// </summary>
         /// <param name="white">White Player</param>
         /// <param name="Black">Black Player</param>
-        public void newGame(Player white, Player Black)
+        public void newGame(Player white, Player black)
         {
-            _games.Add(new Game(white, Black, this));
+            _games.Add(new Game(white, black, this));
+        }
+        public void newGame(Player white, Player black, int gameMode)
+        {
+            _games.Add(new Game(white, black, this, gameMode));
         }
         /// <summary>
         /// New game for testing (without players)

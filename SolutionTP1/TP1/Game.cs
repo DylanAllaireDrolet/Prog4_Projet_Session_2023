@@ -93,12 +93,12 @@ namespace TP1
         /// <param name="white">white player</param>
         /// <param name="black">black player</param>
         /// <param name="chess">chess controller</param>
-        public Game(Player white, Player black, Chess chess)
+        public Game(Player white, Player black, Chess chess, int gameMode = 0)
         {
             _chess = chess;
             _pw = white;
             _pb = black;
-            _board = new Board();
+            _board = new Board(gameMode);
             _turn = Chess.WHITE;
             _myForm = new FormGame(this);
             _thread = new Thread(() =>
@@ -108,7 +108,6 @@ namespace TP1
             _thread.Start();
             _chess = chess;
         }
-
         // Methods
         /// <summary>
         /// Ends the game

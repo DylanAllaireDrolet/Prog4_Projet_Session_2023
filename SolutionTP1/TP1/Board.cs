@@ -43,7 +43,7 @@ namespace TP1
         /// <summary>
         /// Default constructor
         /// </summary>
-        public Board ()
+        public Board(int gameMode = 0)
         {
             _squares = new Square[8, 8];
             // Init square colors
@@ -114,6 +114,18 @@ namespace TP1
             {
                 _squares[1, i].Me = new Pawn(_squares[1, i], WHITE);
                 _squares[6, i].Me = new Pawn(_squares[6, i], BLACK);
+            }
+
+            if (gameMode == Chess.CAPYBARA_PRINCE)
+            {
+                _squares[1, 6].Me = new Capybara(_squares[1, 6], WHITE);
+                _squares[6, 6].Me = new Capybara(_squares[6, 6], BLACK);
+
+                _squares[1, 1].Me = new Capybara(_squares[1, 1], WHITE);
+                _squares[6, 1].Me = new Capybara(_squares[6, 1], BLACK);
+
+                _squares[1, 4].Me = new Prince(_squares[1, 4], WHITE);
+                _squares[6, 4].Me = new Prince(_squares[6, 4], BLACK);
             }
         }
     }
