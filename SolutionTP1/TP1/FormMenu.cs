@@ -179,11 +179,6 @@ namespace TP1
 
         }
 
-        private void StripMenuNewGame_Click(object sender, EventArgs e)
-        {
-            btnNewGame_Click(sender, e);
-        }
-
         private void StripMenuItemSpecialGame_Click(object sender, EventArgs e)
         {
             pnlPlayers.Visible = true;
@@ -207,6 +202,11 @@ namespace TP1
             }
             else
                 MessageBox.Show("Please choose 2 players (CTRL + CLICK TO CHOOSE 2)", "Instructions");
+        }
+
+        private void normalToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            btnNewGame_Click(sender, e);
         }
     }
 }

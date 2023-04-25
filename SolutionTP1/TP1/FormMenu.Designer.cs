@@ -32,6 +32,7 @@
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.StripMenuControl = new System.Windows.Forms.ToolStripMenuItem();
             this.StripMenuNewGame = new System.Windows.Forms.ToolStripMenuItem();
+            this.StripMenuItemSpecialGame = new System.Windows.Forms.ToolStripMenuItem();
             this.StripMenuPlayers = new System.Windows.Forms.ToolStripMenuItem();
             this.pnlPlayers = new System.Windows.Forms.Panel();
             this.lblWLD = new System.Windows.Forms.Label();
@@ -42,7 +43,7 @@
             this.lsbPlayers = new System.Windows.Forms.ListBox();
             this.btnNewGame = new System.Windows.Forms.Button();
             this.btnPlayers = new System.Windows.Forms.Button();
-            this.StripMenuItemSpecialGame = new System.Windows.Forms.ToolStripMenuItem();
+            this.normalToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.pnlPlayers.SuspendLayout();
             this.SuspendLayout();
@@ -71,11 +72,18 @@
             // StripMenuNewGame
             // 
             this.StripMenuNewGame.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.normalToolStripMenuItem,
             this.StripMenuItemSpecialGame});
             this.StripMenuNewGame.Name = "StripMenuNewGame";
             this.StripMenuNewGame.Size = new System.Drawing.Size(448, 54);
             this.StripMenuNewGame.Text = "New game";
-            this.StripMenuNewGame.Click += new System.EventHandler(this.StripMenuNewGame_Click);
+            // 
+            // StripMenuItemSpecialGame
+            // 
+            this.StripMenuItemSpecialGame.Name = "StripMenuItemSpecialGame";
+            this.StripMenuItemSpecialGame.Size = new System.Drawing.Size(448, 54);
+            this.StripMenuItemSpecialGame.Text = "Special game";
+            this.StripMenuItemSpecialGame.Click += new System.EventHandler(this.StripMenuItemSpecialGame_Click);
             // 
             // StripMenuPlayers
             // 
@@ -175,12 +183,12 @@
             this.btnPlayers.UseVisualStyleBackColor = true;
             this.btnPlayers.Click += new System.EventHandler(this.btnPlayers_Click);
             // 
-            // StripMenuItemSpecialGame
+            // normalToolStripMenuItem
             // 
-            this.StripMenuItemSpecialGame.Name = "StripMenuItemSpecialGame";
-            this.StripMenuItemSpecialGame.Size = new System.Drawing.Size(448, 54);
-            this.StripMenuItemSpecialGame.Text = "Special game";
-            this.StripMenuItemSpecialGame.Click += new System.EventHandler(this.StripMenuItemSpecialGame_Click);
+            this.normalToolStripMenuItem.Name = "normalToolStripMenuItem";
+            this.normalToolStripMenuItem.Size = new System.Drawing.Size(448, 54);
+            this.normalToolStripMenuItem.Text = "Normal";
+            this.normalToolStripMenuItem.Click += new System.EventHandler(this.normalToolStripMenuItem_Click);
             // 
             // FormMenu
             // 
@@ -223,6 +231,7 @@
         private System.Windows.Forms.Button btnRemove;
         private System.Windows.Forms.Label lblWLD;
         private System.Windows.Forms.ToolStripMenuItem StripMenuItemSpecialGame;
+        private System.Windows.Forms.ToolStripMenuItem normalToolStripMenuItem;
     }
 }
 
