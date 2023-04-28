@@ -40,6 +40,10 @@ namespace TP1
             // Prince movement
             if (board[sourceY, sourceX].Me is Prince)
             {
+                if((Math.Abs(targetX - sourceX) == 1 && Math.Abs(targetY - sourceY) == 2) ||
+                    (Math.Abs(targetX - sourceX) == 2 && Math.Abs(targetY - sourceY) == 1))
+                    return false;
+
                 if (Math.Abs(sourceX - targetX) <= 2 && Math.Abs(sourceY - targetY) <= 2)
                 {
                     if (!isObstructed(board, sourceX, sourceY, targetX, targetY))
