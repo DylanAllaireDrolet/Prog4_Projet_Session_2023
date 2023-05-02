@@ -1,3 +1,5 @@
 Dylan 3 5 2
 Dimitri 5 2 2
 Natalie 0 1 0
+Maxime 0 1 0
+Megan 1 0 0

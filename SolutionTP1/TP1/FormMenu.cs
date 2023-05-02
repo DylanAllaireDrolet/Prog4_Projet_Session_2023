@@ -198,7 +198,7 @@ namespace TP1
                 if (randInt > 0)
                     _chess.newGame(_players[pw], _players[pb], Chess.CAPYBARA_PRINCE);
                 else
-                    _chess.newGame(_players[pb], _players[pw]);
+                    _chess.newGame(_players[pb], _players[pw], Chess.CAPYBARA_PRINCE);
             }
             else
                 MessageBox.Show("Please choose 2 players (CTRL + CLICK TO CHOOSE 2)", "Instructions");
