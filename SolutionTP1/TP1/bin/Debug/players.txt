@@ -3,3 +3,5 @@ Dimitri 5 2 2
 Natalie 0 1 0
 Maxime 0 1 0
 Megan 1 0 0
+Greg 0 0 1
+Rayan 0 0 1
